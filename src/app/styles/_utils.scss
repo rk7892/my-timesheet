@@ -1,0 +1,66 @@
+// Spacing
+.place-content-center {
+  place-content: center;
+}
+
+// Headings
+.app-h1 {
+  font-size: var(--app-font-size-h1);
+  color: var(--app-black-color);
+}
+
+.app-h2 {
+  font-size: var(--app-font-size-h2);
+  color: var(--app-dark-color);
+}
+
+.app-h6 {
+  font-size: var(--app-font-size-info);
+}
+
+.app-subheading-h6 {
+  font-size: var(--app-font-size-sub-heading);
+  font-weight: var(--app-font-weight-semibold);
+}
+.app-vehicle-subtitles {
+  font-size: var(--app-font-size-md);
+  font-weight: var(--app-font-weight-medium);
+}
+
+
+// Table
+.app-table {
+  th {
+    font-size: var(--app-font-size-md);
+  }
+
+  td {
+    font-size: var(--app-font-size-sm);
+  }
+}
+
+
+.app-mdc-tab {
+  padding: 0px 12px;
+  font-weight: var(--app-font-weight-medium);
+}
+
+.customer-details {
+  .mdc-tab {
+    @extend .app-mdc-tab
+  }
+
+  .info-label,
+  .info-data {
+    @extend .app-h6;
+  }
+
+  .mat-mdc-tab-link-container {
+    border-bottom: 1px solid var(--app-customer-list-border);
+  }
+}
+
+.page-title,
+.customer-name {
+  @extend .app-h2;
+}

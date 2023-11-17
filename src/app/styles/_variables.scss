@@ -1,0 +1,67 @@
+html {
+  --app-gray-placeholder: #9B959F;
+  --app-navbar-form-bg-color: rgba(255, 255, 255, 0.15);
+  --app-sidenav-bottom-border: #E7E7E7;
+  --app-table-th-color: #424E65;
+  --app-table-td-color: #667085;
+  --app-table-a-color: #007AFF;
+  --app-button-outline-bg: rgba(255, 93, 37, 0.12);
+  --app-page-back-bg-color: #F9F9FB;
+  --app-gray-bg-color:#F8F8F8;
+  --app-light-gray-color:#666666;
+  --app-green-color: #07D95A;
+  
+
+
+
+  // Generic colors
+  --app-primary-color: #1755E7;
+  --app-navbar-bg-color: #040033;
+  --app-dark-color: #121C2D;
+  --app-gray-color: #D9D9D9;
+  --app-white-color: #fff;
+  --app-black-color: #000;
+
+  // font
+  --app-font-size-xs: 12px;
+  --app-font-size-sm: 14px;
+  --app-font-size-md: 16px;
+  --app-font-size-lg: 30px;
+  --app-font-size-h2: 24px;
+  --app-font-size-h1: 34px;
+
+  --app-font-size-tab-lable: var(--app-font-size-sm);
+  --app-font-size-sub-heading: var(--app-font-size-md);
+
+  --app-font-weight-lighter: lighter;
+  --app-font-weight-light: 300;
+  --app-font-weight-normal: 400;
+  --app-font-weight-medium: 500;
+  --app-font-weight-semibold: 600;
+  --app-font-weight-bold: 700;
+  --app-font-weight-bolder: bolder;
+
+  // Buttons
+  --app-button-primary-bg: var(--app-primary-color);
+  --app-button-primary-color: var(--app-white-color);
+  --app-button-secondary-bg: var(--app-gray-color);
+  --app-button-secondary-color: var(--app-dark-color);
+  --app-button-outline-secondary-color: var(--app-primary-color);
+  --app-button-outline-primary-bg: var(--app-button-outline-bg);
+  --app-button-gray-border: #8891AA;
+
+  //Customer list
+  --app-customer-icon-font-size: var(--app-font-size-xs);
+  --app-customer-name-font-size: var(--app-font-size-sm);
+  --app-customer-date--font-size: 10px;
+  --app-customer-date--color: #606B85;
+  --app-customer-list-border: #E1E3EA;
+
+  //customer info
+  --app-font-size-info: 14px;
+  --app-label: #666666;
+
+  //Border Lines
+  --app-gray-300: #D0D5DD;
+}
+

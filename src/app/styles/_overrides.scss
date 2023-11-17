@@ -1,0 +1,91 @@
+// This is custom overrides to common styles, bootstrap and other library components
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #121C2D;
+  font-weight: 400;
+}
+
+router-outlet+* {
+  display: block;
+}
+
+router-outlet.primary-router+* {
+  height: 100%;
+}
+
+router-outlet.app-shell-body-router+* {
+  height: 100%;
+}
+
+// Bootstrap overrides
+.btn {
+  border-radius: 4px;
+}
+.customer-details {
+  .mat-mdc-tab-body-content {
+      overflow: initial;
+  }
+}
+.form-label {
+  margin-bottom: 0rem;
+}
+.btn-primary {
+  --bs-btn-color: var(--app-button-primary-color);
+  --bs-btn-bg: var(--app-button-primary-bg);
+  --bs-btn-border-color: var(--app-button-primary-bg);
+  --bs-btn-hover-color: var(--app-button-primary-color);
+  --bs-btn-hover-bg: var(--app-button-primary-bg);
+  --bs-btn-hover-border-color: var(--app-button-primary-bg);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--app-button-primary-color);
+  --bs-btn-active-bg: var(--app-button-primary-bg);
+  --bs-btn-active-border-color: var(--app-button-primary-bg);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--app-button-primary-color);
+  --bs-btn-disabled-bg: var(--app-button-primary-bg);
+  --bs-btn-disabled-border-color: var(--app-button-primary-bg);
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--app-button-outline-primary-color);
+  --bs-btn-bg:var(--app-button-outline-primary-color)
+  --bs-btn-border-color: var(--app-button-outline-primary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--app-button-outline-primary-color);
+  --bs-btn-hover-border-color: var(--app-button-outline-primary-color);
+  --bs-btn-focus-shadow-rgb: 13,110,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--app-button-outline-primary-color);
+  --bs-btn-active-border-color: var(--app-button-outline-primary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--app-button-outline-primary-color);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--app-button-outline-primary-color);
+  --bs-gradient: none;
+}
+
+.btn-secondary {
+  --bs-btn-color: var(--app-button-secondary-color);
+  --bs-btn-bg: var(--app-button-secondary-bg);
+  --bs-btn-border-color: var(--app-button-secondary-bg);
+  --bs-btn-hover-color: var(--app-button-secondary-color);
+  --bs-btn-hover-bg: var(--app-button-secondary-bg);
+  --bs-btn-hover-border-color: var(--app-button-secondary-bg);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--app-button-secondary-color);
+  --bs-btn-active-bg: var(--app-button-secondary-bg);
+  --bs-btn-active-border-color: var(--app-button-secondary-bg);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--app-button-secondary-color);
+  --bs-btn-disabled-bg: var(--app-button-secondary-bg);
+  --bs-btn-disabled-border-color: var(--app-button-secondary-bg);
+}
+
+.new-customer-border-line .mat-mdc-tab-list {
+  border-bottom: 1px solid var(--app-customer-list-border);
+}
+.form-control {
+  font-size: 14px;
+}

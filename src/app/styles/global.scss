@@ -1,0 +1,139 @@
+// These are app specific global scss file
+// used to customize diffrent aspects of the app theme and to add app specific styles
+@use 'variables';
+@use 'utils';
+@use 'overrides';
+
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border: 1px solid var(--app-gray-300);
+}
+
+.has-search .form-control-search {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: var(--app-gray-placeholder);
+}
+
+.has-search .form-control::placeholder {
+    color: var(--app-gray-placeholder);
+    font-weight: var(--app-font-weight-medium);
+}
+
+.info-label {
+    font-weight: var(--app-font-weight-normal);
+    color: var(--app-label);
+}
+
+.info-data {
+    font-weight: var(--app-font-weight-medium);
+    color: var(--app-dark-color);
+}
+
+.customers,
+.enquiries,
+.invoice table,
+.service table,
+.unpaid-service table,
+.e-waybill-list,
+.delivery-challan-list,
+.user-management-list,
+.invoice-items {
+    th {
+        font-size: var(--app-font-size-th);
+        color: var(--app-table-th-color);
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    td {
+        color: var(--app-table-td-color);
+        font-size: var(--app-font-size-td);
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    a {
+        color: var(--app-table-a-color);
+        font-size: var(--app-font-size-td);
+        text-decoration: none;
+    }
+}
+
+.customers, 
+.enquiries, 
+.inventory,
+.delivery-challan-list,
+.user-management-list
+ {
+    padding-top: 30px;
+}
+
+.page-back {
+    background-color: var(--app-page-back-bg-color);
+    height: 64px;
+
+    i {
+        font-size: var(--app-font-size-lg);
+        color: var(--app-dark-color);
+    }
+}
+
+.note {
+    font-size: 10px;
+}
+
+.receipt-page-back {
+    font-size: var(--app-font-size-h2);
+    color: var(--app-dark-color);
+    height: 60px;
+    .page-title {
+        font-size: var(--app-font-size-sm);
+        color: var(--app-dark-color);
+    }
+
+    .back-icon i {
+        font-size: var(--app-font-size-h2);
+        color: var(--app-dark-color);
+    }
+    .receipt-buttons 
+    button{
+        font-size: var(--app-font-size-sm); 
+        color: var(--app-light-gray-color);
+        text-decoration: none;
+    }
+    i{
+        font-size: var(--app-font-size-sm);
+    }
+    
+}
+
+.primary-text-color {
+    color: var(--app-primary-color) !important;
+}
+
+.green-text {
+    color: var(--app-green-color) !important;
+}
+
+.back-button {
+    font-size: 16px;
+    color: var(--app-primary-color);
+}
+.text-bg-primary {
+    color: #fff!important;
+    background-color: var(--app-primary-color) !important; 
+}
+.mandatory{
+    color: var(--app-primary-color);
+}
+.form-label span {
+    color: red;
+}

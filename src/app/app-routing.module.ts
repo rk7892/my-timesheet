@@ -19,6 +19,22 @@ const routes: Routes = [
         path: 'my-projects',
         loadComponent: () => import('./pages/my-projects/my-projects.component').then(c => c.MyProjectsComponent),
       },
+      {
+        path: 'my-employees',
+        loadComponent: () => import('./pages/my-employees/my-employees.component').then(c => c.MyEmployeesComponent),
+      },
+      {
+        path: 'my-timesheet',
+        loadComponent: () => import('./pages/my-timesheet/my-timesheet.component').then(c => c.MyTimesheetComponent),
+      },
+      {
+        path: 'approval',
+        loadComponent: () => import('./pages/approval/approval.component').then(c => c.ApprovalComponent),
+      },
+      {
+        path: 'reports',
+        loadComponent: () => import('./pages/reports/reports.component').then(c => c.ReportsComponent),
+      },
     ]
   }
     

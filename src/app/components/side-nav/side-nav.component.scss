@@ -1,0 +1,54 @@
+.app-sidebar {
+    --sidebar-width: 12.5rem;
+    width: var(--sidebar-width);
+    border-right: 1px solid #d9d9d9;
+    // position: absolute;
+    transition: 0.5s;
+    left: calc(var(--sidebar-width) * -1);
+    z-index: 999;
+    background-color: white;
+    // .email-container {
+    //   max-width: 90%;
+    //   cursor: pointer !important;
+    // }
+    // &.mobile {
+    //   top: 0;
+    //   bottom: 0;
+    // }
+    // &.show {
+    //   left: 0;
+    //   position:relative
+    // }
+  
+    .sidebar-headder {
+      min-height: 7rem;
+      background-color: var(--app-navbar-bg-color);
+      .profileImage {
+        border-radius: 50%;
+      }
+      .icon-link {
+        border-bottom: none !important;
+        background-color: var(--app-primary-color);
+        border-radius: 45%;
+      }
+    }
+  
+    a.nav-link {
+      border-bottom: 1px solid var(--app-sidenav-bottom-border);
+      padding: 11px 20px;
+      border-radius: inherit;
+    }
+  
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+      background-color: transparent;
+      color: var(--app-primary-color) !important;
+      border-left: 3px solid var(--app-primary-color);
+    }
+  
+    .nav-item i {
+      font-size: 1.1rem;
+      margin-right: 0.4rem;
+    }
+  
+  }
+  

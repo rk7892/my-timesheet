@@ -19,12 +19,6 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
-<<<<<<< HEAD
-    "angular-material": "^1.2.5",
-=======
-    "@angular-devkit/build-angular": "~0.802.2",
->>>>>>> c471599b86752f18cc7b0f124d751b0e76668e30
-    "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

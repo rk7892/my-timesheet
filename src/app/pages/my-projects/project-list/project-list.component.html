@@ -1,0 +1,27 @@
+<div class="container-fluid py-4">
+  <div class="row">
+    <div class="col-6">
+      <h2 class="page-title">My Products</h2>
+    </div>
+    <div class="col-lg-3"></div>
+
+    <div class="col-3 ">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="inventory">
+    <div class="col-sm-12 products-details">
+      <nav mat-tab-nav-bar [tabPanel]="tabPanel" mat-stretch-tabs="false" mat-align-tabs="start">
+        <a mat-tab-link [routerLink]="['./', link.link]" *ngFor="let link of links" routerLinkActive="active"
+          [active]="r.isActive" #r="routerLinkActive"> {{link.label}}
+        </a>
+      </nav>
+      <mat-tab-nav-panel #tabPanel>
+        <router-outlet></router-outlet>
+      </mat-tab-nav-panel>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<div class="container-fluid py-4">
+    <div class="col-lg-12 d-flex">
+        <div class="col-lg-6 mt-3">
+            <h2>My Clients List</h2>
+        </div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3 mt-3">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="enquiries  mt-3">
+      <table class="table">
+        <thead>
+          <tr >
+            <th scope="col">Client ID</th>
+            <th scope="col">Client Name</th>
+            <th scope="col">Email ID</th>
+            <th scope="col">No. of Projects</th>
+            <th scope="col">Onboard Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of [1, 2, 3, 4, 5];">
+            <th scope="row">
+              <a [routerLink]="['./clients-details-info']">C0001{{x}}</a>
+            </th>
+            <td>SMRT</td>
+            <td>support@ smrt.co</td>
+            <td>02</td>
+            <td>12/07/2023</td>
+          </tr>
+        </tbody>
+      </table>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="text-decoration-none text-white btn btn-primary float-end" routerLink="./create-clients-details">
+        <i class="bi bi-plus fs-5"></i>
+      </a>
+      <a routerLink="./clients-details-current-project">click</a>
+    </div>
+  

@@ -49,6 +49,7 @@
     th {
         font-size: var(--app-font-size-th);
         color: var(--app-table-th-color);
+        
         font-weight: 700;
         line-height: 30px;
     }
@@ -56,6 +57,7 @@
     td {
         color: var(--app-table-td-color);
         font-size: var(--app-font-size-td);
+        background-color: var(--app-gray-bg-color);
         font-weight: 500;
         line-height: 30px;
     }

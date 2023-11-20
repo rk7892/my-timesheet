@@ -13,15 +13,23 @@ const routes: Routes = [
       },
       {
         path: 'my-clients',
-        loadComponent: () => import('./pages/my-clients/my-clients.component').then(c => c.MyClientsComponent),
+        loadChildren: () => import('./pages/my-clients/my-clients-routing'),
+      },
+      {
+        path: 'create-clients-details',
+        loadComponent: () => import('./pages/my-clients/create-clients-details/create-clients-details.component').then(c => c.CreateClientsDetailsComponent),
       },
       {
         path: 'my-projects',
-        loadComponent: () => import('./pages/my-projects/my-projects.component').then(c => c.MyProjectsComponent),
+        loadChildren: () => import('./pages/my-projects/projects-routing'),
       },
       {
         path: 'my-employees',
-        loadComponent: () => import('./pages/my-employees/my-employees.component').then(c => c.MyEmployeesComponent),
+        loadChildren: () => import('./pages/my-employees/my-employee-routing'),
+      },
+      {
+        path: 'create-employee',
+        loadComponent: () => import('./pages/my-employees/create-employee/create-employee.component').then(c => c.CreateEmployeeComponent),
       },
       {
         path: 'my-timesheet',

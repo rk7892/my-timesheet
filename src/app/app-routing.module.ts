@@ -20,6 +20,11 @@ const routes: Routes = [
         loadComponent: () => import('./pages/my-clients/create-clients-details/create-clients-details.component').then(c => c.CreateClientsDetailsComponent),
       },
       {
+        path: 'create-project',
+        loadComponent: () => import('./pages/my-projects/create-project/create-project.component').then(c => c. CreateProjectComponent),
+      },
+
+      {
         path: 'my-projects',
         loadChildren: () => import('./pages/my-projects/projects-routing'),
       },

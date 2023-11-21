@@ -1,0 +1,22 @@
+.employeetable{
+    th {
+        font-size: var(--app-font-size-th);
+        color: var(--app-table-th-color);
+        background-color: #F4F4F4;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    td {
+        color: var(--app-table-td-color);
+        font-size: var(--app-font-size-td);
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    a {
+        color: var(--app-table-a-color);
+        font-size: var(--app-font-size-td);
+        text-decoration: none;
+    }
+}

@@ -24,10 +24,9 @@ import { MyEmployeeTimesheetComponent } from '../my-employee-timesheet/my-employ
   ]
 })
 export class MyEmployeeInfoComponent {
-
-  
   links = [
-    { label: 'employee-current-project', link: 'employee-current-project' },
-    { label: 'employee-timesheet', link: 'employee-timesheet' },
+    { label: 'current project', link: 'employee-current-project' },
+    { label: 'timesheet', link: 'employee-timesheet' },
   ];
+  lastActiveTab = this.links[0].link;
 }

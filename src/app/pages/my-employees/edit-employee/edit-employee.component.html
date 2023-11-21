@@ -1,1 +1,98 @@
-<p>edit-employee works!</p>
+<div class="container-fluid">
+    <div class="col-lg-6 col-md-6 mt-3">
+        <h2 class="page-title mb-0">Edit Employee Details</h2>
+    </div>
+    <div class="col-lg-6 col-md-6"></div>
+    <div class="col-lg-6 d-flex align-items-center ">
+        <a class="text-decoration-none pe-1" routerLink="/my-employees">
+            <span>Employee List /</span>
+        </a>
+        <span>Employee Details</span>
+    </div>
+    <form action="">
+        <div class="col-ig-12 col-md-12 d-flex mt-3">
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee First Name" class="info-label">First Name</label>
+                <input type="text" class="form-control mt-1" id="Employee First Name" formControlName="customername" required
+                    value="Arun" />
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee Last Name" class="info-label">Last Name</label>
+                <input type="text" class="form-control mt-1" id="Employee Last Name" formControlName="customername" required
+                    value="Ram" />
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee Designation" class="info-label">Designation</label>
+                <select class="form-select info-data mt-1" aria-label=".form-select-lg example" id="Employee Designation">
+                    <option selected>Employee</option>
+                    <option value="1">Manager</option>
+                </select>
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee ID" class="info-label">Employee ID</label>
+                <input type="text" class="form-control mt-1" id="Employee ID" formControlName="customername" required
+                    value="0000001" />
+            </div>
+        </div>
+        <div class="col-ig-12 col-md-12 d-flex mt-3">
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee Email ID" class="info-label">Email ID</label>
+                <input type="email" class="form-control mt-1" id="Employee Email ID" formControlName="customername" required
+                    value="Ram12@gmail.com" />
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee Mobile Number" class="info-label">Mobile Number</label>
+                <input type="text" class="form-control mt-1" id="Employee Mobile Number" formControlName="customername"
+                    required value="89786 98765" />
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee Hourly Cost Rate" class="info-label">Hourly Cost Rate</label>
+                <input type="text" class="form-control mt-1" id="Employee Hourly Cost Rate" formControlName="customername"
+                    required value="₹ 600" />
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee Location" class="info-label">Location</label>
+                <input type="text" class="form-control mt-1" id="Employee Location" formControlName="customername" required
+                    value="Singapore" />
+            </div>
+        </div>
+        <div class="col-ig-12 col-md-12 d-flex mt-3">
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Reporting Manager" class="info-label">Reporting Manager</label>
+                <select class="form-select info-data mt-1" aria-label=".form-select-lg example" id="Reporting Manager">
+                    <option selected>Arun</option>
+                    <option value="1">Tushar B</option>>
+                    <option value="1">Ranjith kumar</option>>
+                    <option value="1">Yuvraj</option>
+                </select>
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Joining Date" class="info-label">Joining Date</label>
+                <input type="date" class="form-control info-data mt-1" id="Joining Date" formControlName="customername"
+                    required placeholder="" />
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Last Date" class="info-label">Last Date</label>
+                <input type="date" class="form-control info-data mt-1" id="Last Date" formControlName="customername" required
+                    placeholder="" />
+            </div>
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Employee Status" class="info-label">Status</label>
+                <select class="form-select info-data mt-1" aria-label=".form-select-lg example" id="Employee Status">
+                    <option selected>Active</option>
+                    <option value="1">In Active</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-ig-12 col-md-12 d-flex mt-3">
+            <div class="col-lg-3 col-md-3 pe-3">
+                <label for="Upload Employee Photo" class="info-label">Upload Photo</label>
+                <input class="form-control  info-data mt-1" type="file" id="Upload Employee Photo">
+            </div>
+            <div class="col-lg-9 col-md-9 "></div>
+        </div>
+    </form>
+    <div class="d-flex justify-content-end pe-3">
+        <button type="submit" class="btn btn-primary">update</button>
+      </div>
+</div>

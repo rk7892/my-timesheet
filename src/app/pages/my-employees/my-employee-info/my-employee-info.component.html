@@ -2,7 +2,7 @@
     <div class="row h-100">
       <!-- Custome Details and Tabs -->
       <div class="col-sm-12 dealer-details">
-   
+        <app-my-employee-info-card></app-my-employee-info-card>
         <nav mat-tab-nav-bar [tabPanel]="tabPanel">
           <a mat-tab-link [routerLink]="['./', link.link]" *ngFor="let link of links" routerLinkActive="active"
             [active]="r.isActive" #r="routerLinkActive"> {{link.label}}

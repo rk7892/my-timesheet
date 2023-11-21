@@ -1,7 +1,44 @@
-<p>my-employee-list works!</p>
-<div>
-    <a class="text-decoration-none" routerLink="/my-employee-info"><h2 class="page-title my-2">nathan</h2></a>
-</div>
-<div>
-    <button type="button" class="btn btn-primary me-3" routerLink="/create-employee">+ Add Dealer</button>
+<div class="container-fluid">
+  <div class="row mt-3">
+    <div class="col-6">
+      <h2 class="page-title">My Employee List</h2>
+    </div>
+    <div class="col-sm-6 d-flex justify-content-end">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search Employee" aria-label="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="employeetable mt-3">
+    <table class="table">
+      <thead class="table-head-bg">
+        <tr>
+          <th scope="col">Employee ID</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email ID</th>
+          <th scope="col">Department</th>
+          <th scope="col">Reporting Manager</th>
+          <th scope="col">Joining Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let x of [1, 2, 3, 4, 5, 6, 7];">
+          <td scope="row">
+            <a class="text-decoration-none" [routerLink]="['/my-employees', x]">U 123456</a>
+          </td>
+          <td>Nathan</td>
+          <td>Robert</td>
+          <td>udhaya@blint.com</td>
+          <td>UI/UX</td>
+          <td>Tushar B</td>
+          <td>12/07/2023</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="d-flex justify-content-end">
+    <button type="button" class="btn btn-primary" routerLink="/create-employee"> <i class="bi bi-plus fs-5"></i></button>
+  </div>
 </div>

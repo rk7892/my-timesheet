@@ -4,6 +4,8 @@ import { ActivatedRoute, NavigationEnd, Router, RouterLink, RouterLinkActive, Ro
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatDialog, MatDialogModule} from '@angular/material/dialog';
 import { Subscription, filter } from 'rxjs';
+import {MatButtonModule} from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
 
 
 
@@ -13,9 +15,11 @@ import { Subscription, filter } from 'rxjs';
   imports: [CommonModule,
     RouterLink,
     MatTabsModule,
+    MatSelectModule,
     RouterOutlet,
     RouterLinkActive,
-    MatDialogModule
+    MatDialogModule,
+    MatButtonModule
     
     ],
   templateUrl: './project-list.component.html',
@@ -35,6 +39,7 @@ export class ProjectListComponent implements OnDestroy {
     { label: 'completed-project', link: 'completed-project' }
   ];
   lastActiveTab = this.links[0].link;
+
   constructor(public dialog: MatDialog) {
     this.subscriptions.add(
       this.router.events.pipe(filter(x => x instanceof NavigationEnd)).subscribe(() => {
@@ -48,11 +53,19 @@ export class ProjectListComponent implements OnDestroy {
       })
     );
   }
-  ngOnDestroy(): void {
-    throw new Error('Method not implemented.');
-  }
-  
- 
+  openDialog() {
+    const dialogRef = this.dialog.open(AddNewModelDialog);
 
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+  ngOnDestroy(): void {
+    this.subscriptions.unsubscribe();
+  }
 }
+
+
+export class AddNewModelDialog {}
+
 

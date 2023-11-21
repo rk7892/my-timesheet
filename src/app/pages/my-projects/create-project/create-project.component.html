@@ -1,1 +1,124 @@
-<p>create-project works!</p>
+<div class="container-fluid">
+    <div class="col-lg-12 col-md-12 mt-3">
+        <h2 class="mb-0 page-title">Create Project</h2>
+        <h6 class="info-label"><a routerLink="/my-clients" class="info-data">My Project</a> / Create Project</h6>
+    </div>
+    <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex  col-12  mt-3">
+        <div class="col-lg-3 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Select Client</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Search Client</option>
+                <option value="1">SMRT</option>
+                <option value="2">Hitachi</option>
+                <option value="3">Tata</option>
+                <option value="4">BuiltINT</option>
+            </select>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Project Name</label>
+            <input type="text" class="form-control" id="location" formControlName="city" required
+                placeholder=" Set Project Name" />
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Status</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Active</option>
+                <option value="1">Inactive</option>
+                <option value="2">Hold</option>
+
+
+            </select>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Set Project Manager</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Tushar B</option>
+                <option value="1">Ranjith</option>
+                <option value="2">Arun</option>
+                <option value="3">Gopal</option>
+                <option value="4">Gopi</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex col-12 mt-4">
+        <div class="col-lg-3 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Project Type</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Billable</option>
+                <option value="1">Non-Billable</option>
+                <option value="2">Admin</option>
+                <option value="3">Training</option>
+                <option value="4">+ Add New Project</option>
+            </select>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Start Date</label>
+            <input type="date" class="form-control" id="location" formControlName="city" required />
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">End date</label>
+            <input type="date" class="form-control" id="location" formControlName="city" required>
+        </div>
+        <div class="col-lg-3 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Total Hours</label>
+            <input type="text" class="form-control" id="location" formControlName="city" required
+                placeholder="00.00Hrs" />
+        </div>
+    </div>
+    <div class="mt-4">
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <hr>
+            <mat-tab label="Create Task">
+                <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex col-12 mt-4">
+                    <div class="col-11 d-lg-flex">
+                        <div class="col-lg-2 col-md-3 col-12 pe-3">
+                            <label for="logo" class="info-label mb-1">Project Type</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Billable</option>
+                                <option value="1">Non-Billable</option>
+                                <option value="2">Admin</option>
+                                <option value="3">Training</option>
+                                <option value="4">+ Add New Project</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-2 col-md-3 col-12 pe-3">
+                            <label for="logo" class="info-label mb-1">Start Date</label>
+                            <input type="date" class="form-control" id="location" formControlName="city" required />
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-12 pe-3">
+                            <label for="logo" class="info-label mb-1">Start Date</label>
+                            <input type="date" class="form-control" id="location" formControlName="city" required />
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-12 pe-3">
+                            <label for="logo" class="info-label mb-1">Start Date</label>
+                            <input type="date" class="form-control" id="location" formControlName="city" required />
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-12 pe-3">
+                            <label for="logo" class="info-label mb-1">Start Date</label>
+                            <input type="date" class="form-control" id="location" formControlName="city" required />
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-12 pe-3">
+                            <label for="logo" class="info-label mb-1">Start Date</label>
+                            <input type="date" class="form-control" id="location" formControlName="city" required />
+                        </div>
+
+                    </div>
+                  
+                    <div class="col-1 d-flex justify-content-end align-items-end">
+                        <a class="text-decoration-none btn btn-secondary" routerLink="/customer/new-customer">
+                            <i class="d-flex justify-content-center"></i>+ Add
+                          </a>
+                    </div>
+                </div>
+
+            </mat-tab>
+
+            <mat-tab label="Assign Task">
+                b
+            </mat-tab>
+
+        </mat-tab-group>
+    </div>
+
+</div>

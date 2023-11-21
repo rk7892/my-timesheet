@@ -15,11 +15,11 @@ const routes: Routes = [
     children: [
       {
         path:'clients-details-completed-project',
-        component: ClientsDetailsCompletedProjectComponent
+        component: ClientsDetailsCompletedProjectComponent,
       },
       {
         path:'clients-details-current-project',
-        component: ClientsDetailsCurrentProjectComponent
+        component: ClientsDetailsCurrentProjectComponent,
       },
       
     ]

@@ -1,1 +1,16 @@
-<p>clients-details-info works!</p>
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <!-- Custome Details and Tabs -->
+    <div class="col-sm-12 dealer-details">
+      <app-clients-details-info-card></app-clients-details-info-card>
+      <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+        <a mat-tab-link [routerLink]="['./', link.link]" *ngFor="let link of links" routerLinkActive="active"
+          [active]="r.isActive" #r="routerLinkActive"> {{link.label}}
+        </a>
+      </nav>
+      <mat-tab-nav-panel #tabPanel>
+        <router-outlet></router-outlet>
+      </mat-tab-nav-panel>
+    </div>
+  </div>
+</div>

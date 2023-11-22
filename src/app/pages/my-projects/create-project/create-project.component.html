@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="col-lg-12 col-md-12 mt-3">
         <h2 class="mb-0 page-title">Create Project</h2>
-        <h6 class="info-label"><a routerLink="/my-clients" class="info-data">My Project</a> / Create Project</h6>
+        <h6 class="info-label"><a routerLink="/" class="info-data">My Project</a> / Create Project</h6>
     </div>
     <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex  col-12  mt-3">
         <div class="col-lg-3 col-md-3 col-12 pe-3">
@@ -70,55 +70,187 @@
             <hr>
             <mat-tab label="Create Task">
                 <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex col-12 mt-4">
-                    <div class="col-lg-11 col-md-11 col-10 d-lg-flex d-md-flex">
-                        <div class="col-lg-2 col-md-3 col-12 pe-3">
-                            <label for="logo" class="info-label mb-1">Project Type</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Billable</option>
-                                <option value="1">Non-Billable</option>
-                                <option value="2">Admin</option>
-                                <option value="3">Training</option>
-                                <option value="4">+ Add New Project</option>
-                            </select>
-                        </div>
-
-                        <div class="col-lg-2 col-md-3 col-12 pe-3">
-                            <label for="logo" class="info-label mb-1">Start Date</label>
-                            <input type="date" class="form-control" id="location" formControlName="city" required />
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 pe-3">
-                            <label for="logo" class="info-label mb-1">Start Date</label>
-                            <input type="date" class="form-control" id="location" formControlName="city" required />
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 pe-3">
-                            <label for="logo" class="info-label mb-1">Start Date</label>
-                            <input type="date" class="form-control" id="location" formControlName="city" required />
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 pe-3">
-                            <label for="logo" class="info-label mb-1">Start Date</label>
-                            <input type="date" class="form-control" id="location" formControlName="city" required />
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-12 pe-3">
-                            <label for="logo" class="info-label mb-1">Start Date</label>
-                            <input type="date" class="form-control" id="location" formControlName="city" required />
-                        </div>
-
+                    <div class="col-lg-3 col-md-3 col-12 pe-3">
+                        <label for="text" class="info-label mb-1">Task</label>
+                        <input type="text" class="form-control" id="location" formControlName="city" placeholder="UI/UX"
+                            required />
                     </div>
-                  
-                    <div class="col-lg-1 col-md-1 col-2 d-flex justify-content-end align-items-end">
+                    <div class="col-lg-3 col-md-3 col-12 pe-3">
+                        <label for="logo" class="info-label mb-1">No. Of Hours For This Task</label>
+                        <input type="text" class="form-control" id="location" formControlName="city"
+                            placeholder="40 Hrs" required />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 pe-3">
+                        <label for="logo" class="info-label mb-1">Start date</label>
+                        <input type="date" class="form-control" id="location" formControlName="city" required>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 pe-3">
+                        <label for="logo" class="info-label mb-1">Completion date</label>
+                        <input type="date" class="form-control" id="location" formControlName="city"
+                            placeholder="20-07-2023" required>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex col-12 mt-4">
+                    <div class="col-lg-3">
+                        <label for="logo" class="info-label mb-1">Status</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>On Going</option>
+                            <option value="1">Inactive</option>
+                            <option value="2">Active</option>
+                            <option value="3">Hold</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3 d-flex justify-content-end pt-4">
                         <a class="text-decoration-none btn btn-secondary" routerLink="/customer/new-customer">
-                            <i class=""></i>+ Add
-                          </a>
+                            <i class="d-flex justify-content-center"></i>+ Add
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 d-flex mt-5 table-bg">
+                    <div class="col-lg-10 col-md-10 col-10 d-flex p-2">
+                        <div class="col-12 d-flex">
+                            <div class="col-6 d-flex">
+                                <div class="col-lg-4 col-md-3 col-3">
+                                    <h6 class="info-data mb-0">Task</h6>
+                                    <h6 class="info-label">UI/UX</h6>
+                                </div>
+                                <div class="col-lg-5 col-md-3 col-3">
+                                    <h6 class="info-data mb-0">No. Of Hours For This Task</h6>
+                                    <h6 class="info-label">40 hrs</h6>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-3">
+                                    <h6 class="info-data mb-0">Start Date</h6>
+                                    <h6 class="info-label">12-07-2023</h6>
+                                </div>
+
+                            </div>
+                            <div class="col-6 d-flex ps-5">
+                                <div class="col-lg-4 col-md-3 col-3">
+                                    <h6 class="info-data mb-0">Completion Date</h6>
+                                    <h6 class="info-label">12-07-2023</h6>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-3">
+                                    <h6 class="info-data mb-0">Completion Date</h6>
+                                    <h6 class="info-label">12-07-2023</h6>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-3">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                     
+                     
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-2 d-flex justify-content-end">
+                        <button class="btn"><i class="bi bi-pencil "></i></button>
+                        <button class="btn" ><i class="bi bi-trash "></i></button>
                     </div>
                 </div>
 
             </mat-tab>
-
             <mat-tab label="Assign Task">
-                b
-            </mat-tab>
+                <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex col-12 mt-4">
+                    <div class="col-lg-3 col-md-3 col-12 pe-3">
+                        <label for="text" class="info-label mb-1">Task</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Requirement gathering</option>
+                            <option value="1">UI/UX Design</option>
+                            <option value="2">Database Design</option>
+                            <option value="3">Web App Development</option>
+                            <option value="3">Mobile App Development</option>
+                            <option value="3">API Development</option>
+                            <option value="3">Testing</option>
+                            <option value="3">Deployment</option>
+                            <option value="3">UAT</option>
+                            <option value="3">Support</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 pe-3">
+                        <label for="logo" class="info-label mb-1">Select Employee</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Arun</option>
+                            <option value="1">Raj Kumar</option>
+                            <option value="2">Ranjith</option>
+                            <option value="3">Kumar</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 pe-3">
+                        <label for="logo" class="info-label mb-1">No.of Hours for employee</label>
+                        <input type="type" class="form-control" id="location" formControlName="city" placeholder="40Hrs" required>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-12 pe-3">
+                        <label for="logo" class="info-label mb-1">Start Date</label>
+                        <input type="date" class="form-control" id="location" formControlName="city"
+                            placeholder="20-07-2023" required>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex col-12 mt-4">
+                    <div class="col-lg-3">
+                        <label for="logo" class="info-label mb-1">End Date</label>
+                        <input type="date" class="form-control" id="location" formControlName="city"
+                            placeholder="20-07-2023" required>
+                       
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-3 d-flex justify-content-end pt-4">
+                        <a class="text-decoration-none btn btn-secondary" routerLink="/customer/new-customer">
+                            <i class="d-flex justify-content-center"></i>+ Add
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 d-flex mt-5 table-bg">
+                    <div class="col-lg-10 col-md-10 col-10 d-flex p-2">
+                        <div class="col-12 d-flex">
+                            <div class="col-6 d-flex">
+                                <div class="col-lg-4 col-md-3 col-3">
+                                    <h6 class="info-data mb-0">Task</h6>
+                                    <h6 class="info-label">UI/UX</h6>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-3">
+                                    <h6 class="info-data mb-0">Select Employee </h6>
+                                    <h6 class="info-label">Arun</h6>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-3">
+                                    <h6 class="info-data mb-0">No.of Hours for Employees</h6>
+                                    <h6 class="info-label">40 hrs</h6>
+                                </div>
 
-        </mat-tab-group>
+                            </div>
+                            <div class="col-6 d-flex ps-5">
+                                <div class="col-lg-4 col-md-3 col-3">
+                                    <h6 class="info-data mb-0">Start Date</h6>
+                                    <h6 class="info-label">12-07-2023</h6>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-3">
+                                    <h6 class="info-data mb-0">End Date</h6>
+                                    <h6 class="info-label">12-07-2023</h6>
+                                </div>
+                                <div class="col-lg-4 col-md-3 col-3">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                     
+                     
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-2 d-flex justify-content-end">
+                        <button class="btn"><i class="bi bi-pencil "></i></button>
+                        <button class="btn" ><i class="bi bi-trash "></i></button>
+                    </div>
+                </div>
+                
+            </mat-tab>
+        </mat-tab-group>       
+    </div>
+    <div class="col-lg-12 col-md-12 col-12 d-flex justify-content-end  p-3">
+        <a class="text-decoration-none btn btn-primary mt-3" routerLink="/project-details-team">
+            Create Project
+        </a>
     </div>
 
 </div>

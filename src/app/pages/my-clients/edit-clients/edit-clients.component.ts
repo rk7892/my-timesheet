@@ -4,12 +4,12 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-clients-details-current-project',
+  selector: 'app-edit-clients',
   standalone: true,
   imports:[MatProgressBarModule,RouterLink,CommonModule],
-  templateUrl: './clients-details-current-project.component.html',
-  styleUrls: ['./clients-details-current-project.component.scss']
+  templateUrl: './edit-clients.component.html',
+  styleUrls: ['./edit-clients.component.scss']
 })
-export class ClientsDetailsCurrentProjectComponent {
+export class EditClientsComponent {
 
 }

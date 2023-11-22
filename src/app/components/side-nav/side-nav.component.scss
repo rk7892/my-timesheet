@@ -36,21 +36,23 @@
   }
 
   a.nav-link {
-    border-bottom: 1px solid var(--app-sidenav-bottom-border);
-    padding: 11px 20px;
+    // border-bottom: 1px solid var(--app-sidenav-bottom-border);
+    padding: 15px 20px;
     border-radius: inherit;
   }
 
   .nav-pills .nav-link.active,
   .nav-pills .show>.nav-link {
-    background-color: transparent;
-    color: var(--app-primary-color) !important;
-    border-left: 3px solid var(--app-primary-color);
+    background-color: #1755E7;
+    color: var(--app-white-color) !important;
+    // border-left: 6px solid var(--app-secondary-color);
+    // border-width: 20px;
+
   }
 
   .nav-item i {
     font-size: 1.1rem;
-    margin-right: 0.4rem;
+    margin-right: 0.5rem;
   }
 
 }

@@ -1,13 +1,103 @@
 <div class="container-fluid">
-<div class="row mt-3">
-    <div class="col-6">
-        <h2 class="page-title">My Projects</h2>
-        <h6 class="info-label"><a routerLink="/" class="info-data">My Project</a> / Create Project</h6>
-    </div>
-    <div class="col-lg-3"></div>
+    <div class="row mt-3">
+        <div class="col-lg-6 col-md-6">
+            <h2 class="page-title">My Projects</h2>
+            <h6 class="info-label"><a routerLink="/" class="info-data">My Project</a> / Create Project</h6>
+        </div>
+        <div class="col-lg-5 col-md-5"></div>
 
-    <div class="col-3">
-        <button type="button" class="btn btn-outline-secondary"> <i class="bi bi-pencil pe-2"></i>Edit</button>
+        <div class="col-lg-1 col-md-1">
+            <button type="button" class="btn btn-outline-secondary"><i class="bi bi-pencil pe-2"></i>Edit</button>
+        </div>
     </div>
-</div>
+    <div class="col-12 d-flex justify-content-between table-bg">
+        <div class="col-8 d-flex justify-content-between pt-4 ps-4">
+            <div>
+                <p>Project Name</p>
+                <h6>SMRT</h6>
+            </div>
+            <div>
+                <p>Project Manager</p>
+                <h6>Tushar B</h6>
+            </div>
+            <div>
+                <p>Project Type</p>
+                <h6>Billable</h6>
+            </div>
+            <div>
+                <p>Total Hours</p>
+                <h6>4 hrs</h6>
+            </div>
+            <div>
+                <p>Start Date </p>
+                <h6>18 July 2023</h6>
+            </div>
+            <div>
+                <p>End Date</p>
+                <h6>27 July 2023</h6>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3 pt-4">
+            <div class="d-flex justify-content-between">
+                <p>Progress</p>
+                <p>45%</p>
+            </div>
+
+            <div class="progress mb-2" style="height:7px">
+                <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <h6>Allocate hrs 280</h6>
+                <h6>Utilise hrs 90</h6>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4">
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <hr>
+            <mat-tab label="Team">
+                <mat-accordion class="purchase-items">
+                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                      <mat-expansion-panel-header class="border-bottom" [collapsedHeight]="customCollapsedHeight"
+                        [expandedHeight]="customExpandedHeight">
+                        <mat-panel-description>
+                          <div class="col-sm-12 d-flex">
+                            <div class="col-sm-3">
+                              <img src="/assets/images/loev.png">
+                            </div>
+                            <div class="col-sm-3 d-flex justify-content-center flex-column ">
+                              <h6 class="info-label mb-2">Batt:RE Storie</h6>
+                            </div>
+                            <div class="col-sm-2 d-flex justify-content-center flex-column ">
+                              <h6 class="info-label mb-2">Light Blue</h6>
+                  
+                            </div>
+                            <div class="col-sm-2 d-flex justify-content-center flex-column ">
+                              <h6 class="info-label mb-2">Variant 1</h6>
+                            </div>
+                            <div class="col-sm-2 d-flex justify-content-center flex-column ">
+                              <h6 class="info-label mb-2">₹75,499</h6>
+                            </div>
+                          </div>
+                        </mat-panel-description>
+                      </mat-expansion-panel-header>
+                      <h2 class="app-subheading-h6 my-2">Remark</h2>
+                      <div class="col-sm-12">
+                        <div class="col-sm-6">
+                          <textarea class="form-control" formControlName="customerNotes" required></textarea>
+                        </div>
+                        <div class="col-sm-6"></div>
+                      </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            
+            </mat-tab>
+            <mat-tab label="Task">
+                f
+            </mat-tab>
+        </mat-tab-group>   
+
+    </div>
 </div>

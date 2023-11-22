@@ -37,6 +37,10 @@ const routes: Routes = [
         loadComponent: () => import('./pages/my-employees/create-employee/create-employee.component').then(c => c.CreateEmployeeComponent),
       },
       {
+        path: 'edit-employee',
+        loadComponent: () => import('./pages/my-employees/edit-employee/edit-employee.component').then(c => c.EditEmployeeComponent),
+      },
+      {
         path: 'my-timesheet',
         loadComponent: () => import('./pages/my-timesheet/my-timesheet.component').then(c => c.MyTimesheetComponent),
       },

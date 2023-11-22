@@ -1,5 +1,5 @@
 .app-sidebar {
-  --sidebar-width: 12.5rem;
+  --sidebar-width: 15rem;
   width: var(--sidebar-width);
   border-right: 1px solid #d9d9d9;
   // position: absolute;
@@ -37,7 +37,7 @@
 
   a.nav-link {
     // border-bottom: 1px solid var(--app-sidenav-bottom-border);
-    padding: 15px 20px;
+    padding: 10px 40px;
     border-radius: inherit;
   }
 
@@ -52,7 +52,7 @@
 
   .nav-item i {
     font-size: 1.1rem;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
   }
 
 }

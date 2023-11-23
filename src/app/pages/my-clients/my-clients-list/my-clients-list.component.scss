@@ -21,7 +21,17 @@
         font-size: var(--app-font-size-td);
         text-decoration: none;
     }
-}
-.gray-bg{
-    color: aqua;
+    .table-bg>th{
+        background-color: #F4F4F4;
+        
+    }
+   
+    thead>tr>th{
+        border-bottom: none;
+        border-color: white;
+        border-radius: 4px;
+    }
+    // thead{
+    //     border-radius: 4px;
+    // }
 }

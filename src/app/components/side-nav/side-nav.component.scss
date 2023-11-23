@@ -37,7 +37,8 @@
 
   a.nav-link {
     // border-bottom: 1px solid var(--app-sidenav-bottom-border);
-    padding: 10px 40px;
+   
+    padding: 8px 50px;
     border-radius: inherit;
   }
 
@@ -45,6 +46,7 @@
   .nav-pills .show>.nav-link {
     background-color: #1755E7;
     color: var(--app-white-color) !important;
+    height: 45px;
     // border-left: 6px solid var(--app-secondary-color);
     // border-width: 20px;
 
@@ -54,5 +56,7 @@
     font-size: 1.1rem;
     margin-right: 0.8rem;
   }
-
+  .nav-height>li>a{
+    height: 60px;
+  }
 }

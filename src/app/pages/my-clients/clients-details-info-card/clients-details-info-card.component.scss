@@ -1,0 +1,9 @@
+.mat-mdc-tab-header {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    --mdc-tab-indicator-active-indicator-height: 2px;
+    --mdc-tab-indicator-active-indicator-shape: 0;
+    --mdc-secondary-navigation-tab-container-height: 60px;
+}

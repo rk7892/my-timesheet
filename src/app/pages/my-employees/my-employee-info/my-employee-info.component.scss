@@ -1,0 +1,11 @@
+.mat-tab-label {
+    border-bottom: 2px solid var(--gray-300, #D0D5DD);
+    background: #FFF;
+    color: #67748E;;
+}
+
+.mat-tab-label-active {
+    background-color: rgba(0, 76, 255, 0.03);
+    color: #004CFF;
+    font-weight: 700;
+}

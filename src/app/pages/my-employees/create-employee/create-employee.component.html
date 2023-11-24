@@ -10,7 +10,7 @@
         <span>Create Employee</span>
     </div>
     <form action="">
-        <div class="col-ig-12 col-md-12 d-flex mt-3">
+        <div class="col-ig-12 col-md-12  d-lg-flex d-md-flex col-12 mt-3"> 
             <div class="col-lg-3 col-md-3 pe-3">
                 <label for="Employee First Name" class="info-label">First Name</label>
                 <input type="text" class="form-control mt-1" id="Employee First Name" formControlName="customername" required
@@ -34,7 +34,7 @@
                     placeholder="0000001" />
             </div>
         </div>
-        <div class="col-ig-12 col-md-12 d-flex mt-3">
+        <div class="col-ig-12 col-md-12 d-lg-flex d-md-flex col-12 mt-lg-3 mt-md-3">
             <div class="col-lg-3 col-md-3 pe-3">
                 <label for="Employee Email ID" class="info-label">Email ID</label>
                 <input type="email" class="form-control mt-1" id="Employee Email ID" formControlName="customername" required
@@ -56,7 +56,7 @@
                     placeholder="Singapore" />
             </div>
         </div>
-        <div class="col-ig-12 col-md-12 d-flex mt-3">
+        <div class="col-ig-12 col-md-12 d-lg-flex d-md-flex col-12 mt-lg-3 mt-md-3">
             <div class="col-lg-3 col-md-3 pe-3">
                 <label for="Reporting Manager" class="info-label">Reporting Manager</label>
                 <select class="form-select info-data mt-1" aria-label=".form-select-lg example" id="Reporting Manager">
@@ -84,7 +84,7 @@
                 </select>
             </div>
         </div>
-        <div class="col-ig-12 col-md-12 d-flex mt-3">
+        <div class="col-ig-12 col-md-12 d-flex mt-lg-3 mt-md-3">
             <div class="col-lg-3 col-md-3 pe-3">
                 <label for="Upload Employee Photo" class="info-label">Upload Photo</label>
                 <input class="form-control  info-data mt-1" type="file" id="Upload Employee Photo">
@@ -92,7 +92,7 @@
             <div class="col-lg-9 col-md-9 "></div>
         </div>
     </form>
-    <div class="d-flex justify-content-end pe-3">
+    <div class="d-flex justify-content-end pe-3 mt-3 mb-3">
         <button type="submit" class="btn btn-primary" (click)="openDialog()">Create Employee</button>
       </div>
 </div>

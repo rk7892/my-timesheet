@@ -30,3 +30,4 @@ export class MyEmployeeInfoComponent {
   ];
   lastActiveTab = this.links[0].link;
 }
+

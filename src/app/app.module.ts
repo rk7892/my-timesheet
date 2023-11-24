@@ -6,12 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { ProjectDetailsTeamComponent } from './pages/my-projects/project-details-team/project-details-team.component';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    ProjectDetailsTeamComponent,
-    
+    AppComponent, 
   ],
   imports: [
     BrowserModule,

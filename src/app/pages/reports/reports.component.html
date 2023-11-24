@@ -1,1 +1,64 @@
-<p>reports works!</p>
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-6">
+            <h2 class="page-title">My Reports</h2>
+        </div>
+        <div class="col-lg-3"></div>
+
+        <div class="col-3 ">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex  col-12  mt-3">
+        <div class="col-lg-2 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Start Date</label>
+            <input type="date" class="form-control" id="location" formControlName="city" required
+                placeholder=" Set Project Name" />
+           
+        </div>
+        <div class="col-lg-2 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">End Date</label>
+            <input type="date" class="form-control" id="location" formControlName="city" required
+                placeholder=" Set Project Name" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Select Project</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>SMRT</option>
+                <option value="1">Hitachi</option>
+                <option value="2">Acumen</option>
+                <option value="2">TATA</option>
+
+
+            </select>
+        </div>
+        <div class="col-lg-2 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Select Task</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Design</option>
+                <option value="1">Developing</option>
+                <option value="2">Testing</option>
+                <option value="3">Big Data</option>
+               
+            </select>
+        </div>
+        <div class="col-lg-2 col-md-3 col-12 pe-3">
+            <label for="logo" class="info-label mb-1">Select Employee</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Tushar B</option>
+                <option value="1">Ranjith</option>
+                <option value="2">Arun</option>
+                <option value="3">Gopal</option>
+                <option value="4">Gopi</option>
+            </select>
+        </div>
+        <div class="col-lg-2 col-md-3 col-12 pt-4 ps-5">
+            <a class="text-decoration-none btn btn-primary " routerLink="/project-details-team">
+                 Download
+            </a>
+        </div>
+    </div>
+</div>

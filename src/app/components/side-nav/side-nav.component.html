@@ -1,18 +1,19 @@
-<div class="app-sidebar vh-100 shadow">
+<div class="app-sidebar vh-100 shadow" [ngClass]="{'position-absolute mobile': isMobile, 'show': show,}"
+  [ngClass]="{'d-none': !isMobile}">
   <div class="d-flex justify-content-center align-item-center pt-5">
     <img src="/assets/images/ohoh_logo.png" style="background:none" class="profleImage" alt="logo" height="40"
       width="150" data-atf="1" data-frt="0">
   </div>
-  
-    <ul class="nav nav-pills flex-column  mt-5">
-      <div class="nav-height">
+
+  <ul class="nav nav-pills flex-column  mt-5">
+    <div class="nav-height">
       <li class="nav-item">
         <a routerLink="/dashboard" routerLinkActive="active" class="nav-link link-dark" aria-current="page">
           <i class="bi bi-columns-gap"></i>
           Dashboard
         </a>
       </li>
-    
+
       <li class="nav-item">
         <a routerLink="/my-clients" routerLinkActive="active" class="nav-link link-dark">
           <i class="bi bi-people"></i>
@@ -50,6 +51,6 @@
         </a>
       </li>
     </div>
-    </ul>
-  
+  </ul>
+
 </div>

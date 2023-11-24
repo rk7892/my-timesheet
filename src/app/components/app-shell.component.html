@@ -9,9 +9,9 @@
 
 
 <div class="d-flex">
-  <app-side-nav></app-side-nav>
+  <app-side-nav [isMobile]="viwportServ.device() === 'mobile' ? true : false" [show]="showSideNav"></app-side-nav>
   <div>
-    <app-navbar></app-navbar>
+    <app-navbar [isMobile]="viwportServ.device() === 'mobile' ? true : false" (toggleSideMenu)="toggleSideNav()"></app-navbar>
 
   <main class="">
     <router-outlet class="app-shell-body-router"></router-outlet>

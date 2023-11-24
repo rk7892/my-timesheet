@@ -1,18 +1,24 @@
 <div class="navbar shadow">
-    <div class="col-lg-12 d-flex align-items-center">
-        <div class="col-lg-1 ps-3">
+    <div class="col-lg-12 col-md-12 col-12 d-flex align-items-center">
+        <div class="col-lg-1 col-md-1 col-1 ps-3">
             <button type="button"><i class="bi bi-list h4"></i></button>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-3 d-lg-flex d-md-flex d-none justify-content-end">
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-primary" type="submit">Search</button>
             </form>
         </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4 d-flex justify-content-end align-items-center px-3">
+        <div class="col-lg-4 col-md-4 col-3"></div>
+        <div class="col-lg-4 col-md-4 col-8 d-flex justify-content-end align-items-center px-3">
             <div>
-                <i class="bi bi-bell"></i>
+                <button type="button" class="btn  position-relative align-items-center d-flex" style="height: 35px; width: 35px;">
+                    <i class="bi bi-bell"></i>
+               
+                   <span class="position-absolute  start-1 end-0 translate-middle p-1 bg-danger border border-light rounded-circle">
+                     <span class="visually-hidden">New alerts</span>
+                   </span>
+                 </button>
             </div>
             <div class="ps-3  info-label">
                 <h6>Hari S</h6>
@@ -23,10 +29,19 @@
             </div>
             <div>
                 <i class="ps-3 dropdown-toggle" data-bs-toggle="dropdown" id="dropdownMenuButton"></i>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Daily</a></li>
-                    <li><a class="dropdown-item" href="#">Weekly</a></li>
-                    <li><a class="dropdown-item" href="#">Yearly</a></li>
+                <ul class="dropdown-menu dropdown-menu-end" style="width: 200px; height: 184px;" >
+                    <li class="ps-3">
+                        <span class="info-label">Tushar B</span>
+                    </li>
+                    <li class="ps-3">
+                        <span class="info-data">tushar@builint.com</span>
+                    </li>
+                    <hr class="my-1">
+                    <li><button class="dropdown-item info-label" type="button">Settings</button></li>
+                    <hr class="my-1">
+                    <li><button class="dropdown-item info-label" type="button">Help</button></li>
+                    <hr class="my-1">
+                    <li><button class="dropdown-item info-label" type="button">Log Out</button></li>
                 </ul>
             </div>
 

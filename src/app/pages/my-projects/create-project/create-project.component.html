@@ -202,34 +202,34 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-12 d-flex mt-5 table-bg">
-                    <div class="col-lg-10 col-md-10 col-10 d-flex p-2">
-                        <div class="col-12 d-flex">
-                            <div class="col-6 d-flex">
-                                <div class="col-lg-4 col-md-3 col-3">
+                <div class="col-lg-12 col-md-12 col-12 d-lg-flex mt-5 table-bg">
+                    <div class="col-lg-10 col-md-10 col-10 d-lg-flex p-2">
+                        <div class="col-lg-12 d-lg-flex">
+                            <div class="col-lg-6 col-md-6 d-md-flex d-lg-flex">
+                                <div class="col-lg-4 col-md-3 col-12">
                                     <h6 class="info-data mb-0">Task</h6>
                                     <h6 class="info-label">UI/UX</h6>
                                 </div>
-                                <div class="col-lg-4 col-md-4 col-3">
+                                <div class="col-lg-4 col-md-4 col-12">
                                     <h6 class="info-data mb-0">Select Employee </h6>
                                     <h6 class="info-label">Arun</h6>
                                 </div>
-                                <div class="col-lg-5 col-md-5 col-3">
+                                <div class="col-lg-5 col-md-5 col-12">
                                     <h6 class="info-data mb-0">No.of Hours for Employees</h6>
                                     <h6 class="info-label">40 hrs</h6>
                                 </div>
 
                             </div>
-                            <div class="col-6 d-flex ps-5">
-                                <div class="col-lg-4 col-md-3 col-3">
+                            <div class="col-lg-6 d-lg-flex col-12 ps-5">
+                                <div class="col-lg-4 col-md-3 col-12">
                                     <h6 class="info-data mb-0">Start Date</h6>
                                     <h6 class="info-label">12-07-2023</h6>
                                 </div>
-                                <div class="col-lg-4 col-md-3 col-3">
+                                <div class="col-lg-4 col-md-3 col-12">
                                     <h6 class="info-data mb-0">End Date</h6>
                                     <h6 class="info-label">12-07-2023</h6>
                                 </div>
-                                <div class="col-lg-4 col-md-3 col-3">
+                                <div class="col-lg-4 col-md-3 col-12">
                                     
                                 </div>
 
@@ -248,7 +248,7 @@
         </mat-tab-group>       
     </div>
     <div class="col-lg-12 col-md-12 col-12 d-flex justify-content-end  p-3">
-        <a class="text-decoration-none btn btn-primary mt-3" routerLink="/project-details-team">
+        <a class="text-decoration-none btn btn-primary mt-3" (click)="openDialog()" routerLink="/project-details-team">
             Create Project
         </a>
     </div>

@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppShellComponent } from './components/app-shell.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
   {
     path: '',
     component: AppShellComponent,
@@ -11,6 +16,7 @@ const routes: Routes = [
         path: 'dashboard',
         loadComponent: () => import('./pages/dashboard/dashboard.component').then(c => c.DashboardComponent),
       },
+   
       {
         path: 'my-clients',
         loadChildren: () => import('./pages/my-clients/my-clients-routing'),
@@ -54,8 +60,10 @@ const routes: Routes = [
       },
     ]
   }
+
     
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

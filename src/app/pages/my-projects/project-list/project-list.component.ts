@@ -34,9 +34,9 @@ export class ProjectListComponent implements OnDestroy {
   
   
   links = [
-    { label: 'current-project', link: 'current-project' },
-    { label: 'upcoming-project', link: 'upcoming-project' },
-    { label: 'completed-project', link: 'completed-project' }
+    { label: 'Current-project', link: 'current-project' },
+    { label: 'Upcoming-project', link: 'upcoming-project' },
+    { label: 'Completed-project', link: 'completed-project' }
   ];
   lastActiveTab = this.links[0].link;
 

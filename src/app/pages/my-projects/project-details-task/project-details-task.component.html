@@ -2,7 +2,7 @@
   <div class="row mt-3">
     <div class="col-lg-6 col-md-6">
       <h2 class="page-title">My Projects</h2>
-      <h6 class="info-label"><a routerLink="../current-project" class="info-data">My Project</a> / Create Project</h6>
+      <h6 class="info-label"><a routerLink="/current-project" class="info-data">My Project</a> / Create Project</h6>
     </div>
     <div class="col-lg-5 col-md-5"></div>
 
@@ -10,35 +10,35 @@
       <button class="btn btn-outline-secondary" routerLink="../edit-project"><i class="bi bi-pencil"> Edit</i></button>
     </div>
   </div>
-  <div class="col-12 d-flex justify-content-between table-bg mt-2">
-    <div class="col-8 d-flex justify-content-between pt-4 ps-4">
-      <div>
-        <p>Project Name</p>
+  <div class="col-lg-12 col-md-12 col d-flex justify-content-between table-bg mt-2">
+    <div class="col-lg-8 col-md-8 d-lg-flex col-md-flex d-flex justify-content-between pt-4 ps-4">
+      <div >
+        <p class="info-data">Project Name</p>
         <h6>SMRT</h6>
       </div>
       <div>
-        <p>Project Manager</p>
+        <p class="info-data">Project Manager</p>
         <h6>Tushar B</h6>
       </div>
       <div>
-        <p>Project Type</p>
+        <p class="info-data ">Project Type</p>
         <h6>Billable</h6>
       </div>
-      <div>
-        <p>Total Hours</p>
+      <div >
+        <p class="info-data">Total Hours</p>
         <h6>4 hrs</h6>
       </div>
-      <div>
-        <p>Start Date </p>
+      <div class="d-lg-flex d-md-flex flex-column d-none">
+        <p class="info-data">Start Date </p>
         <h6>18 July 2023</h6>
       </div>
-      <div>
-        <p>End Date</p>
+      <div class="d-lg-flex d-md-flex flex-column d-none">
+        <p class="info-data">End Date</p>
         <h6>27 July 2023</h6>
       </div>
     </div>
     <div class="col-1"></div>
-    <div class="col-3 pt-4">
+    <div class="col-3 pt-4 d-lg-flex d-md-flex flex-column d-none ">
       <div class="d-flex justify-content-between">
         <p>Progress</p>
         <p>45%</p>
@@ -267,20 +267,20 @@
           </mat-accordion>
         </div>
         <div class="col-12 pt-4">
-          <a class="text-decoration-none text-white btn btn-primary float-end" routerLink="/create-clients-details">
+          <a class="text-decoration-none text-white btn btn-primary float-end" routerLink="/create-project">
             <i class="bi bi-plus fs-5"></i>
           </a>
         </div>
 
       </mat-tab>
       <mat-tab label="Task">
-        <div class="col-lg-12 col-md-12 table-bg d-flex p-2 mt-3">
-          <div class="col-6 p-1">
+        <div class="col-lg-12 col-md-12 table-bg d-lg-flex col-md-flex col-12 p-2 mt-3">
+          <div class="col-lg-6 col-md-6 col-12 p-1">
             <h6 class="info-label">UI / UX</h6>
             <p class="info-data">Web Design</p>
           </div>
-          <div class="col-sm-6 d-flex justify-content-between">
-            <div>
+          <div class="col-lg-6 col-md-6 col-12 d-lg-flex col-md-flex justify-content-between">
+            <div >
               <h6 class="info-label">40 Hrs</h6>
               <p class="info-data">No.of Hours For This Task</p>
 
@@ -304,12 +304,12 @@
 
 
         </div>
-        <div class="col-lg-12 col-md-12 table-bg d-flex p-2 mt-3 align-items-center">
-          <div class="col-6 p-1">
+        <div class="col-lg-12 col-md-12 col-12 table-bg d-lg-flex d-md-flex p-2 mt-3 align-items-center">
+          <div class="col-lg-6 col-md-6 col-12 p-1">
             <h6 class="info-label">Frontend</h6>
             <p class="info-data">Web Developer</p>
           </div>
-          <div class="col-sm-6 d-flex justify-content-between">
+          <div class="col-lg-6 col-md-6 col-12 d-lg-flex d-md-flex justify-content-between">
             <div>
               <h6 class="info-label">40 Hrs</h6>
               <p class="info-data">No.of Hours For This Task</p>
@@ -333,7 +333,7 @@
           </div>
         </div>
           <div class="col-12 pt-4">
-          <a class="text-decoration-none text-white btn btn-primary float-end" routerLink="/create-clients-details">
+          <a class="text-decoration-none text-white btn btn-primary float-end" routerLink="/create-project">
             <i class="bi bi-plus fs-5"></i>
           </a>
         </div>

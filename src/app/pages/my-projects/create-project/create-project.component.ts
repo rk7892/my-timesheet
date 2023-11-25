@@ -34,7 +34,7 @@ export class CreateProjectComponent {
   templateUrl: 'create-project-popup.html',
   standalone: true,
   imports: [MatDialogModule,
-    MatButtonModule,
+    MatButtonModule,RouterLink
   ],
 })
 export class CreateProjectDialog { }

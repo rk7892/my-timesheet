@@ -4,3 +4,34 @@
 .project-box{
     width: 5.5rem;
 }
+.submitted-approval-card {
+    border-radius: 8px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    border-left: 5px solid rgba(255, 180, 6, 1);
+}
+
+.submitted-approval {
+    color: rgba(255, 180, 6, 1);
+}
+.approval-card {
+    border-radius: 8px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    border-left: 5px solid rgba(0, 183, 30, 1);
+}
+.approval {
+    color: #00B71E;
+}
+.reject {
+    color: #EA1C2D;
+}
+.reject-card {
+    border-radius: 8px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    border-left: 5px solid#EA1C2D;
+}
+.download-icon{
+    background-color: transparent;
+}

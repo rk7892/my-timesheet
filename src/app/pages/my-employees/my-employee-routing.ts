@@ -14,11 +14,11 @@ const routes: Routes = [
     component: MyEmployeeInfoComponent,
     children: [
       {
-        path: 'employee-current-project',
+        path: 'my-employee-current-project',
         component: MyEmployeeCurrentProjectComponent,
       },
       {
-        path: 'employee-timesheet',
+        path: 'my-employee-timesheet',
         component: MyEmployeeTimesheetComponent,
       },
     ]

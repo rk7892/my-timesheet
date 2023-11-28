@@ -26,9 +26,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let x of [1, 2, 3, 4, 5, 6, 7];">
+        <tr *ngFor="let x of [1, 2, 3, 4, 5];">
           <td scope="row">
-            <a class="text-decoration-none" [routerLink]="['./my-employee-info']">U 123456</a>
+            <a class="text-decoration-none" [routerLink]="['./my-employee-info']">U 123456{{x}}</a>
           </td>
           <td>Nathan</td>
           <td class="d-none d-sm-table-cell">Robert</td>

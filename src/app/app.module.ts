@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatTabsModule,
     HttpClientModule,
   ],
   providers: [],

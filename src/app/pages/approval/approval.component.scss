@@ -1,0 +1,70 @@
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #0EB85B;
+    border-radius: 50%;
+    display: inline-block;
+    padding-right: 10px;
+}
+.dot1 {
+    height: 12px;
+    width: 12px;
+    background-color: #FC003C;
+    border-radius: 50%;
+    display: inline-block;
+    padding-right: 10px;
+}
+.dot2 {
+    height: 12px;
+    width: 12px;
+    background-color: #FFB406;
+    border-radius: 50%;
+    display: inline-block;
+    padding-right: 10px;
+}
+.dot3 {
+    height: 12px;
+    width: 12px;
+    background-color: #004CFF;
+    border-radius: 50%;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.test{
+    color: var(--app-primary-color);
+}
+.enquiries{
+    th {
+        font-size: var(--app-font-size-th);
+        color: var(--app-table-th-color);
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    td {
+        color: var(--app-table-td-color);
+        font-size: var(--app-font-size-td);
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    a {
+        color: var(--app-table-a-color);
+        font-size: var(--app-font-size-td);
+        text-decoration: none;
+    }
+    .table-bg>th{
+        background-color: #F4F4F4;
+        
+    }
+   
+    thead>tr>th{
+        border-bottom: none;
+        border-color: white;
+        border-radius: 4px;
+    }
+    // thead{
+    //     border-radius: 4px;
+    // }
+}

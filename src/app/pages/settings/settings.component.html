@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <div class="row">
+        <h2 class="">settings</h2>
+        <mat-tab-group class="">
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-person pe-2"></i>
+                        <span>Profile</span>
+                    </div>
+                 </ng-template>
+                <div class="px-3">
+                    <div class="col-12 d-flex justify-content-between mt-3">
+                        <h4 class="">Admin Profile</h4>
+                        <div>
+                            <button type="" class="btn btn-primary d-flex align-items-center" routerLink="/">
+                                <i class="bi bi-pencil pe-1"></i>
+                                <span class="d-none d-block d-sm-block">Edit Profile</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex px-3">
+                    <div class="col-lg-6 col-md-8 d-flex mt-3 mb-3 p-2 align-items-center card-bg">
+                        <div class="">
+                            <img src="assets/images/vino-admin-profile.jpg" alt=""
+                                style=" height: 100px; width: 100px; border-radius: 50%; background-color: rgb(235, 197, 197);">
+                        </div>
+                        <div class="ms-3 d-flex-column align-items-center">
+                            <label for="username" class="form-label info-label">Username</label>
+                            <h6 class="info-data">Hari.s</h6>
+                            <label for="email" class="form-label info-label">Email</label>
+                            <h6 class="info-data">harihara0412@gmail.com</h6>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mx-3">
+            </mat-tab>
+
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-send pe-2"></i>
+                        Notification
+                    </div>
+                </ng-template>
+                Content 2
+            </mat-tab>
+
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-info-circle pe-2"></i>
+                        Help
+                    </div>
+                </ng-template>
+                Content 2
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</div>

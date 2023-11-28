@@ -2,11 +2,22 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppShellComponent } from './components/app-shell.component';
 import { LoginComponent } from './pages/login/login.component';
+import { SignUpComponent } from './pages/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 
 const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'sign-up',
+    component: SignUpComponent,
+  },
+  {
+    path: 'forgot-password',
+    component: ForgotPasswordComponent,
   },
   {
     path: '',
@@ -57,6 +68,10 @@ const routes: Routes = [
       {
         path: 'reports',
         loadComponent: () => import('./pages/reports/reports.component').then(c => c.ReportsComponent),
+      },
+      {
+        path: 'settings',
+        loadComponent: () => import('./pages/settings/settings.component').then(c => c.SettingsComponent),
       },
     ]
   }

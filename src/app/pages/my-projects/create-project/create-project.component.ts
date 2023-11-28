@@ -12,30 +12,31 @@ import { RouterLink } from '@angular/router';
   templateUrl: './create-project.component.html',
   styleUrls: ['./create-project.component.scss']
 })
-export class CreateProjectComponent {
-  constructor(public dialog: MatDialog) {
+export class CreateProjectComponent {}
+//   constructor(public dialog: MatDialog) {
 
-  }
-  openDialog() {
-    const dialogRef = this.dialog.open(CreateProjectDialog, {
-      height: '45%',
-      width: '35%',
+//   }
+//   openDialog() {
+//     const dialogRef = this.dialog.open(CreateProjectDialog, {
+//       height: '45%',
+//       width: '35%',
       
-    });
+//     });
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
+//     dialogRef.afterClosed().subscribe(result => {
+//       console.log(`Dialog result: ${result}`);
+//     });
+//   }
 
-}
-@Component({
-  selector: 'create-project-popup',
-  templateUrl: 'create-project-popup.html',
-  standalone: true,
-  imports: [MatDialogModule,
-    MatButtonModule,RouterLink
-  ],
-})
-export class CreateProjectDialog { }
+// }
+// @Component({
+//   selector: 'create-project-popup',
+//   templateUrl: 'create-project-popup.html',
+//   standalone: true,
+//   imports: [MatDialogModule,
+//     MatButtonModule,RouterLink,
+//     MatTabsModule,
+//   ],
+// })
+// export class CreateProjectDialog { }
   

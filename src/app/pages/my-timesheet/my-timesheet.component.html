@@ -127,14 +127,14 @@
                 <!--  -->
                 <tr>
                     <td class="col-2 py-3"><a href="" class="text-decoration-none">+ Select Project</a></td>
-                    <td class="col-2 py-3"><input type="text" class="project-box"></td>
-                    <td class="col-1 ps-3 py-3"><input type="text" class="shift-box"></td>
-                    <td class="col-1 py-3"><input type="text" class="shift-box"></td>
-                    <td class="col-1 py-3"><input type="text" class="shift-box"></td>
-                    <td class="col-1 py-3"><input type="text" class="shift-box"> </td>
-                    <td class="col-1 py-3"><input type="text" class="shift-box"></td>
-                    <td class="col-1 py-3"><input type="text" class="shift-box"></td>
-                    <td class="col-1 py-3"><input type="text" class="shift-box"></td>
+                    <td class="col-2 py-3"><input type="text" class="project-box disable-box"></td>
+                    <td class="col-1 ps-3 py-3"><input type="text" class="shift-box  disable-box"></td>
+                    <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                    <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                    <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"> </td>
+                    <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                    <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                    <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
                     <td class="col-1 py-3 ps-5">
                         <h6>3.00</h6>
                     </td>
@@ -175,7 +175,7 @@
         </table>
         <div class="col-lg-12 d-flex justify-content-between mb-3">
             <button type="button" class="btn border"><i class="bi bi-copy pe-2 info-label"></i>Copy last Weekly</button>
-            <button type="button" class="btn border btn-primary">submit</button>
+            <button type="button" class="btn border btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">submit</button>
         </div>
         <h5 class="app-subheading-h6 mb-3">Recently submitted</h5>
 
@@ -193,8 +193,6 @@
                         <h6 class="submitted-approval">Submitted for Approval</h6>
                     </div>
                 </div>
-
-
             </div>
             <div class="col-lg-8 col-md-8 d-lg-flex d-md-flex align-items-center">
                 <div class="col-lg-3 col-md-3 col-12 ps-3 ps-md-0">
@@ -243,8 +241,6 @@
                         <h6 class="approval">Approved</h6>
                     </div>
                 </div>
-
-
             </div>
             <div class="col-lg-8 col-md-8 d-lg-flex d-md-flex align-items-center">
                 <div class="col-lg-3 col-md-3 col-12 ps-3 ps-md-0">
@@ -274,12 +270,10 @@
                         <h6 class="info-data">Pre-sales</h6>
                     </div>
                     <div class="pe-1">
-
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="col-12 d-lg-flex d-md-flex mt-3 mb-3 p-3 reject-card">
             <div class="col-lg-4 col-md-4 col-12 ps-3 ps-md-0 d-flex align-items-center">
                 <div>
@@ -292,8 +286,6 @@
                         <h6 class="reject">Rejected</h6>
                     </div>
                 </div>
-
-
             </div>
             <div class="col-lg-8 col-md-8 d-lg-flex d-md-flex align-items-center">
                 <div class="col-lg-3 col-md-3 col-12 ps-3 ps-md-0">
@@ -330,8 +322,177 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Time Sheet </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <table class="table">
+                <thead>
+                    <tr class="table-bg">
+                        <th scope="col-1">Projects</th>
+                        <th scope="col-2">Task</th>
+                        <th scope="col-1" class="d-flex flex-column ps-3">
+                            <h6 class="info-data d-flex justify-content-center">Mon,Jul 17</h6>
+                            <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown">1st
+                                shift</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">General</a></li>
+                                <li><a class="dropdown-item" href="#">2nd shift</a></li>
+                                <li><a class="dropdown-item" href="#">3rd shift</a></li>
+                            </ul>
+                        </th>
+                        <th scope="col-1">
+                            <h6 class="info-data d-flex justify-content-center">Mon,Jul 18</h6>
+                            <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown">1st
+                                shift</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">General</a></li>
+                                <li><a class="dropdown-item" href="#">2nd shift</a></li>
+                                <li><a class="dropdown-item" href="#">3rd shift</a></li>
+                            </ul>
+                        </th>
+                        <th scope="col-1">
+                            <h6 class="info-data d-flex justify-content-center">Mon,Jul 19</h6>
+                            <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown">1st
+                                shift</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">General</a></li>
+                                <li><a class="dropdown-item" href="#">2nd shift</a></li>
+                                <li><a class="dropdown-item" href="#">3rd shift</a></li>
+                            </ul>
+                        </th>
+                        <th scope="col-1">
+                            <h6 class="info-data d-flex justify-content-center">Mon,Jul 20</h6>
+                            <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown">1st
+                                shift</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">General</a></li>
+                                <li><a class="dropdown-item" href="#">2nd shift</a></li>
+                                <li><a class="dropdown-item" href="#">3rd shift</a></li>
+                            </ul>
+                        </th>
+                        <th scope="col-1">
+                            <h6 class="info-data d-flex justify-content-center">Mon,Jul 21</h6>
+                            <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown">1st
+                                shift</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">General</a></li>
+                                <li><a class="dropdown-item" href="#">2nd shift</a></li>
+                                <li><a class="dropdown-item" href="#">3rd shift</a></li>
+                            </ul>
+                        </th>
+                        <th scope="col-1">
+                            <h6 class="info-data d-flex justify-content-center">Mon,Jul 22</h6>
+                            <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown">1st
+                                shift</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">General</a></li>
+                                <li><a class="dropdown-item" href="#">2nd shift</a></li>
+                                <li><a class="dropdown-item" href="#">3rd shift</a></li>
+                            </ul>
+                        </th>
+                        <th scope="col-1">
+                            <h6 class="info-data d-flex justify-content-center">Mon,Jul 23</h6>
+                            <button type="button" class="btn border dropdown-toggle" data-bs-toggle="dropdown">1st
+                                shift</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">General</a></li>
+                                <li><a class="dropdown-item" href="#">2nd shift</a></li>
+                                <li><a class="dropdown-item" href="#">3rd shift</a></li>
+                            </ul>
+                        </th>
+                        <th scope="col-1" class="ps-5">Total</th>
+                        <th scope="col-1" class="ps-5"></th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr *ngFor="let x of [1, 2, 3];">
+                        <td class="col-1 py-3">
+                            <a>SMRT {{x}}</a>
+                        </td>
+                        <td class="col-1">
+                            <button type="button" class="btn border dropdown-toggle"
+                                data-bs-toggle="dropdown">Design</button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Developing</a></li>
+                                <li><a class="dropdown-item" href="#">Test</a></li>
+                                <li><a class="dropdown-item" href="#">Big Data</a></li>
+                            </ul>
+                        </td>
+                        <td class="col-1 py-3 ps-3"><input type="text" class="shift-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box"></td>
+                        <td class="col-1 py-3 ps-5">
+                            <h6>3.00</h6>
+                        </td>
+                        <td class="col-1 py-3 ps-5"><button class="border-0" style="background-color: white;">
+                            <i class="bi bi-trash"></i></button></td>
+                    </tr>
+                    <!--  -->
+                    <tr>
+                        <td class="col-2 py-3"><a href="" class="text-decoration-none">+ Select Project</a></td>
+                        <td class="col-2 py-3"><input type="text" class="project-box disable-box"></td>
+                        <td class="col-1 ps-3 py-3"><input type="text" class="shift-box  disable-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"> </td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                        <td class="col-1 py-3"><input type="text" class="shift-box  disable-box"></td>
+                        <td class="col-1 py-3 ps-5">
+                            <h6>3.00</h6>
+                        </td>
+                        <td class="col-1 py-3 ps-5"><button class="border-0" style="background-color: white;">
+                            <i class="bi bi-trash"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-2 py-3">Total</td>
+                        <td class="col-2 py-3"></td>
+                        <td class="col-1 ps-3 py-3">
+                            <h6 class="info-data">8.00 hrs</h6>
+                        </td>
+                        <td class="col-1 py-3">
+                            <h6 class="info-data">0.00 hrs</h6>
+                        </td>
+                        <td class="col-1 py-3">
+                            <h6 class="info-data">0.00 hrs</h6>
+                        </td>
+                        <td class="col-1 py-3">
+                            <h6 class="info-data">0.00 hrs</h6>
+                        </td>
+                        <td class="col-1 py-3">
+                            <h6 class="info-data">0.00 hrs</h6>
+                        </td>
+                        <td class="col-1 py-3">
+                            <h6 class="info-data">0.00 hrs</h6>
+                        </td>
+                        <td class="col-1 py-3">
+                            <h6 class="info-data">0.00 hrs</h6>
+                        </td>
+                        <td class="col-1 py-3 ps-4">
+                            <h6 class="info-label">8.00 hrs</h6>
+                        </td>
+                        <td class="col-1 py-3 ps-5"><button class="border-0" style="background-color: white;">
+                            <i class="bi bi-trash"></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Resubmit </button>
+        </div>
+      </div>
+    </div>
+  </div>

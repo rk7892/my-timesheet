@@ -139,8 +139,12 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-2 d-flex justify-content-end">
-                        <button class="btn"><i class="bi bi-pencil"></i></button>
-                        <button class="btn"><i class="bi bi-trash"></i></button>
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#myModal">
+                            <i class="bi bi-pencil"></i>
+                          </button>
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="bi bi-trash"></i>
+                          </button>
                     </div>
                 </div>
             </mat-tab>
@@ -255,12 +259,16 @@
                 </div>
                 <h5 class="d-flex justify-content-center mt-3">Project created successfully</h5>
                 <div class="d-flex justify-content-center mt-3 pb-3">
-                    <button type="button"
+                    <!-- <button type="button"
                         class="btn btn-primary client-create-pop-button d-flex justify-content-center align-items-center"
                         data-bs-dismiss="modal"><span style="font-size: 12px;"><a
                                 routerLink="/my-projects/current-project"
                                 class="text-decoration-none text-white">ok</a></span>
-                            </button>
+                            </button> -->
+                            <a class="text-decoration-none btn btn-primary"  routerLink="/my-projects/current-project" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                ok
+                            </a>
+
                 </div>
             </div>
         </div>

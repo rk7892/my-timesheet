@@ -1,169 +1,227 @@
 <div class="container-fluid">
-    <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex mt-3">
-        <div class="col-lg-6">
-            <h2 class="page-title">Approval</h2>
-        </div>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3 ">
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary" type="submit">Search</button>
-            </form>
-        </div>
+  <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex mt-3">
+    <div class="col-lg-6">
+      <h2 class="page-title">Approval</h2>
+    </div>
+    <div class="col-lg-3"></div>
+    <div class="col-lg-3 ">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-primary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex mt-5">
+    <div class="col-lg-9 d-flex">
+      <div class="col-lg-3 pe-4">
+        <h6 class="border rounded p-2"><span class="dot"></span> 17 jul 2023-23 jul 2023</h6>
+      </div>
+      <div class="col-lg-3 pe-4">
+        <h6 class="border rounded p-2"><span class="dot1"></span> 17 jul 2023-23 jul 2023</h6>
+      </div>
+      <div class="col-lg-3 pe-4">
+        <h6 class="border rounded p-2"><span class="dot2"></span> 17 jul 2023-23 jul 2023</h6>
+      </div>
+      <div class="col-lg-3 pe-4">
+        <h6 class="border rounded p-2"><span class="dot3"></span> 17 jul 2023-23 jul 2023</h6>
+      </div>
     </div>
 
-    <div class="col-lg-12 col-md-12 d-lg-flex d-md-flex mt-5">
-        <div class="col-lg-9 d-flex">
-            <div class="col-lg-3 pe-4">
-                <h6 class="border rounded p-2"><span class="dot"></span> 17 jul 2023-23 jul 2023</h6>
-            </div>
-            <div class="col-lg-3 pe-4">
-                <h6 class="border rounded p-2"><span class="dot1"></span> 17 jul 2023-23 jul 2023</h6>
-            </div>
-            <div class="col-lg-3 pe-4">
-                <h6 class="border rounded p-2"><span class="dot2"></span> 17 jul 2023-23 jul 2023</h6>
-            </div>
-            <div class="col-lg-3 pe-4">
-                <h6 class="border rounded p-2"><span class="dot3"></span> 17 jul 2023-23 jul 2023</h6>
-            </div>
-        </div>
+    <div class="col-lg-3">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <i class="bi bi-chevron-compact-left info-data btn border me-2"></i>
+          <li class="page-item info-label me-2"><a class="page-link rounded text-decoration-none" href="#">June</a></li>
+          <i class="bi bi-chevron-compact-right info-label btn border"></i>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <!--  -->
+  <div class="enquiries  mt-3">
+    <table class="table">
+      <thead>
+        <tr class="table-bg">
+          <th scope="col-2">Employee Profile</th>
+          <th scope="col-1">Mon,Jul 17</th>
+          <th scope="col-1">Tue,Jul 18</th>
+          <th scope="col-2">Wed,Jul 19</th>
+          <th scope="col-1">Thu,Jul 20</th>
+          <th scope="col-2">Fri,Jul 21</th>
+          <th scope="col-1">Sat,Jul 22</th>
+          <th scope="col-2">Sun,Jul 23</th>
+          <th scope="col-2">Action</th>
+        </tr>
+      </thead>
 
-        <div class="col-lg-3">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-end">
-                    <i class="bi bi-chevron-compact-left info-data btn border me-2"></i>
-                    <li class="page-item info-label me-2"><a class="page-link rounded text-decoration-none"
-                            href="#">June</a></li>
-                    <i class="bi bi-chevron-compact-right info-label btn border"></i>
-                </ul>
-            </nav>
-        </div>
+      <tbody>
+        <tr>
+          <td colspan="9">
+            <mat-accordion>
+              <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header class="border-bottom" [collapsedHeight]="customCollapsedHeight"
+                  [expandedHeight]="customExpandedHeight">
+                  <mat-panel-description>
+
+       <div class="col-lg-12 d-flex">
+        <tr class="d-flex">
+          <td class="d-flex">
+            <div class="d-flex align-items-center">
+              <div class="col-lg-2 pe-5"><img src="/assets/images/emp_profile.png" style="background:none"
+                  class="profleImage" alt="logo" height="40" width="40" data-atf="1" data-frt="0">
+              </div>
+              <div class="col-8 ps-2">
+                <h5 class="info-label">ARUN R</h5>
+                <h6 class="info-data">Senior Design</h6>
+              </div>
+            </div>
+          </td>
+          <td class="d-flex align-items-center bg-info">
+             <div class="col">
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <div class="ps-3">
+              <h6 class="info-label">7h 05m</h6>
+              <h6 class="info-data">1st Shift </h6>
+            </div>
+          </td>
+          <td class="ms-5 d-flex align-items-center">
+            <div class="col">
+             <i class="bi bi-check-circle-fill"></i>
+           </div>
+           <div class="ps-3">
+             <h6 class="info-label">7h 05m</h6>
+             <h6 class="info-data">1st Shift </h6>
+           </div>
+         </td>
+         <td class="ms-5 d-flex align-items-center">
+          <div class="col">
+           <i class="bi bi-check-circle-fill"></i>
+         </div>
+         <div class="ps-3">
+           <h6 class="info-label">7h 05m</h6>
+           <h6 class="info-data">1st Shift </h6>
+         </div>
+       </td>
+       <td class="ms-5 d-flex align-items-center">
+        <div class="col">
+         <i class="bi bi-check-circle-fill"></i>
+       </div>
+       <div class="ps-3">
+         <h6 class="info-label">7h 05m</h6>
+         <h6 class="info-data">1st Shift </h6>
+       </div>
+     </td>
+     <td class="ms-5 d-flex align-items-center">
+      <div class="col">
+       <i class="bi bi-check-circle-fill"></i>
+     </div>
+     <div class="ps-3">
+       <h6 class="info-label">7h 05m</h6>
+       <h6 class="info-data">1st Shift </h6>
+     </div>
+   </td>
+   <td class="ms-5 d-flex align-items-center">
+    <div class="col">
+     <i class="bi bi-check-circle-fill"></i>
+   </div>
+   <div class="ps-3">
+     <h6 class="info-label">7h 05m</h6>
+     <h6 class="info-data">1st Shift </h6>
+   </div>
+ </td>
+ <td class="ms-5 d-flex align-items-center">
+  <div class="col">
+   <i class="bi bi-check-circle-fill"></i>
+ </div>
+ <div class="ps-3">
+   <h6 class="info-label">7h 05m</h6>
+   <h6 class="info-data">1st Shift </h6>
+ </div>
+</td>
+         
+        </tr>
+        
+  </div>
+
+  </mat-panel-description>
+  </mat-expansion-panel-header>
+  <div class="d-flex justify-content-between pt-2">
+    <div class="col-7 ps-3">
+      <h6 class="mt-2">Ranjith</h6>
     </div>
-    <!--  -->
-    <div class="enquiries  mt-3">
-        <table class="table">
-            <thead>
-                <tr class="table-bg">
-                    <th scope="col-2">Employee Profile</th>
-                    <th scope="col-1">Mon,Jul 17</th>
-                    <th scope="col-1">Tue,Jul 18</th>
-                    <th scope="col-2">Wed,Jul 19</th>
-                    <th scope="col-1">Thu,Jul 20</th>
-                    <th scope="col-2">Fri,Jul 21</th>
-                    <th scope="col-1">Sat,Jul 22</th>
-                    <th scope="col-2">Sun,Jul 23</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="" *ngFor="let x of [1, 2, 3];">
-                    <td class="col-12">
-                        <mat-accordion>
-                            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
-                              <mat-expansion-panel-header class="border-bottom" [collapsedHeight]="customCollapsedHeight"
-                                [expandedHeight]="customExpandedHeight">
-                                <mat-panel-description>
-                                  <div class="col-12 d-flex mt-4 project-team ">
-                                    <div class="col-6">
-                                      <h6 class="info-label">UI / UX</h6>
-                                      <p class="info-data">Web Design</p>
-                
-                                    </div>
-                                    <div class="col-sm-6 d-flex justify-content-between">
-                                      <div>
-                                        <h6 class="info-label">120</h6>
-                                        <p class="info-data">Total Hours</p>
-                
-                                      </div>
-                                      <div>
-                                        <h6 class="info-label">26</h6>
-                                        <p class="info-data">Completed Hours</p>
-                
-                                      </div>
-                                      <div>
-                                        <h6 class="info-label">04</h6>
-                                        <p class="info-data">Total Employee</p>
-                
-                                      </div>
-                                    </div>
-                                  </div>
-                                </mat-panel-description>
-                              </mat-expansion-panel-header>
-                              <div class="d-flex justify-content-between pt-2">
-                                <div class="col-7 ps-3">
-                                  <h6 class="mt-2">Ranjith</h6>
-                                </div>
-                                <div class="col-2"></div>
-                
-                                <div class="col-3 pt-2">
-                                  <div class="d-flex justify-content-between">
-                                    <p>Allocate hrs 40</p>
-                                    <p>Utilise hrs 20</p>
-                                  </div>
-                                  <div class="progress mb-3" style="height:7px">
-                                    <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
-                                  </div>
-                
-                                </div>
-                              </div>
-                              <div class="d-flex justify-content-between pt-2">
-                                <div class="col-7 ps-3">
-                                  <h6 class="mt-2">Arun</h6>
-                                </div>
-                                <div class="col-2"></div>
-                
-                                <div class="col-3 pt-2">
-                                  <div class="d-flex justify-content-between">
-                                    <p>Allocate hrs 40</p>
-                                    <p>Utilise hrs 20</p>
-                                  </div>
-                                  <div class="progress mb-3" style="height:7px">
-                                    <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
-                                  </div>
-                
-                                </div>
-                              </div>
-                              <div class="d-flex justify-content-between pt-2">
-                                <div class="col-7 ps-3">
-                                  <h6 class="mt-2">Kumar</h6>
-                                </div>
-                                <div class="col-2"></div>
-                
-                                <div class="col-3 pt-2">
-                                  <div class="d-flex justify-content-between">
-                                    <p>Allocate hrs 40</p>
-                                    <p>Utilise hrs 20</p>
-                                  </div>
-                                  <div class="progress mb-3" style="height:7px">
-                                    <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
-                                  </div>
-                
-                                </div>
-                              </div>
-                              <div class="d-flex justify-content-between pt-2">
-                                <div class="col-7 ps-3">
-                                  <h6 class="mt-2">Gopal</h6>
-                                </div>
-                                <div class="col-2"></div>
-                
-                                <div class="col-3 pt-2">
-                                  <div class="d-flex justify-content-between">
-                                    <p>Allocate hrs 40</p>
-                                    <p>Utilise hrs 20</p>
-                                  </div>
-                                  <div class="progress mb-3" style="height:7px">
-                                    <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
-                                  </div>
-                
-                                </div>
-                              </div>
-                
-                            </mat-expansion-panel>
-                          </mat-accordion>
-                    </td>
-                    
-                </tr>
-            </tbody>
-        </table>
+    <div class="col-2"></div>
+
+    <div class="col-3 pt-2">
+      <div class="d-flex justify-content-between">
+        <p>Allocate hrs 40</p>
+        <p>Utilise hrs 20</p>
+      </div>
+      <div class="progress mb-3" style="height:7px">
+        <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
+      </div>
+
     </div>
+  </div>
+  <div class="d-flex justify-content-between pt-2">
+    <div class="col-7 ps-3">
+      <h6 class="mt-2">Dinesh</h6>
+    </div>
+    <div class="col-2"></div>
+
+    <div class="col-3 pt-2">
+      <div class="d-flex justify-content-between">
+        <p>Allocate hrs 40</p>
+        <p>Utilise hrs 20</p>
+      </div>
+      <div class="progress mb-3" style="height:7px">
+        <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="d-flex justify-content-between pt-2">
+    <div class="col-7 ps-3">
+      <h6 class="mt-2">Kumar</h6>
+    </div>
+    <div class="col-2"></div>
+
+    <div class="col-3 pt-2">
+      <div class="d-flex justify-content-between">
+        <p>Allocate hrs 40</p>
+        <p>Utilise hrs 20</p>
+      </div>
+      <div class="progress mb-3" style="height:7px">
+        <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
+      </div>
+
+    </div>
+  </div>
+  <div class="d-flex justify-content-between pt-2">
+    <div class="col-7 ps-3">
+      <h6 class="mt-2">Vino</h6>
+    </div>
+    <div class="col-2"></div>
+
+    <div class="col-3 pt-2">
+      <div class="d-flex justify-content-between">
+        <p>Allocate hrs 40</p>
+        <p>Utilise hrs 20</p>
+      </div>
+      <div class="progress mb-3" style="height:7px">
+        <div class="progress-bar" style="width:45%;border-radius: 4px;"></div>
+      </div>
+
+    </div>
+  </div>
+
+  </mat-expansion-panel>
+  </mat-accordion>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+</div>
 
 </div>

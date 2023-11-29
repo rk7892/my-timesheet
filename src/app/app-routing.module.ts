@@ -40,7 +40,6 @@ const routes: Routes = [
         path: 'create-project',
         loadComponent: () => import('./pages/my-projects/create-project/create-project.component').then(c => c. CreateProjectComponent),
       },
-
       {
         path: 'my-projects',
         loadChildren: () => import('./pages/my-projects/projects-routing'),
@@ -48,14 +47,6 @@ const routes: Routes = [
       {
         path: 'my-employees',
         loadChildren: () => import('./pages/my-employees/my-employee-routing'),
-      },
-      {
-        path: 'create-employee',
-        loadComponent: () => import('./pages/my-employees/create-employee/create-employee.component').then(c => c.CreateEmployeeComponent),
-      },
-      {
-        path: 'edit-employee',
-        loadComponent: () => import('./pages/my-employees/edit-employee/edit-employee.component').then(c => c.EditEmployeeComponent),
       },
       {
         path: 'my-timesheet',

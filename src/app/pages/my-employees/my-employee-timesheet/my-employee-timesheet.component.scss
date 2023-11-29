@@ -17,6 +17,15 @@
 .approval {
     color: #00B71E;
 }
+.rejected-card {
+    border-radius: 8px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    border-left: 5px solid #EA1C2D;
+}
+.rejected {
+    color: #EA1C2D;
+}
 .download-icon{
     background-color: transparent;
 }

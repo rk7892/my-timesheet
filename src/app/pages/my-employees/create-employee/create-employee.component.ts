@@ -21,7 +21,7 @@ export class CreateEmployeeComponent {
   openDialog() {
     const dialogRef = this.dialog.open(CreateEmployeeDialog, {
       height: '40%',
-      width: '40%',
+      width: '50%',
       
     });
     dialogRef.afterClosed().subscribe(result => {
@@ -35,7 +35,8 @@ export class CreateEmployeeComponent {
   templateUrl: 'create-employee-popup.html',
   standalone: true,
   imports: [MatDialogModule,
-    MatButtonModule, 
+    MatButtonModule,
+    RouterLink
   ],
 })
 export class CreateEmployeeDialog { }

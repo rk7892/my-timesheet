@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -11,7 +12,7 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./my-employee-info-card.component.scss'],
   standalone: true,
   imports: [
-    RouterLink,MatButtonModule,MatMenuModule,MatIconModule,MatCardModule,
+    RouterLink,MatButtonModule,MatMenuModule,MatIconModule,MatCardModule,CommonModule
   ]
 })
 export class MyEmployeeInfoCardComponent {

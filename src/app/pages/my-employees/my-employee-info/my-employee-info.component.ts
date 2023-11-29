@@ -6,6 +6,8 @@ import { MyEmployeeInfoCardComponent } from '../my-employee-info-card/my-employe
 import { MyEmployeeCurrentProjectComponent } from '../my-employee-current-project/my-employee-current-project.component';
 import { MyEmployeeTimesheetComponent } from '../my-employee-timesheet/my-employee-timesheet.component';
 import { Subscription, filter } from 'rxjs';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @Component({
@@ -21,10 +23,12 @@ import { Subscription, filter } from 'rxjs';
     RouterLinkActive,
     MyEmployeeInfoCardComponent,
     MyEmployeeCurrentProjectComponent,
-    MyEmployeeTimesheetComponent
+    MyEmployeeTimesheetComponent,
+    MatSelectModule,
+    MatFormFieldModule,
   ]
 })
-export class MyEmployeeInfoComponent {
+export class MyEmployeeInfoComponent implements OnDestroy{
   private route = inject(ActivatedRoute);
   private router = inject(Router);
   private subscriptions = new Subscription();
@@ -32,8 +36,9 @@ export class MyEmployeeInfoComponent {
     { label: 'current project', link: 'my-employee-current-project' },
     { label: 'timesheet', link: 'my-employee-timesheet' },
   ];
-  lastActiveTab = this.links[0].link;
-  tabs: any;
+
+    lastActiveTab = this.links[0].link;
+ 
 
   constructor() {
     this.subscriptions.add(

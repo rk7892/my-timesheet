@@ -93,6 +93,63 @@
         </div>
     </form>
     <div class="d-flex justify-content-end pe-3 mt-3 mb-3">
-        <button type="submit" class="btn btn-primary" (click)="openDialog()">Create Employee</button>
+        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Create Employee</button>
       </div>
 </div>
+            <!-- modal -->
+            <!-- <div class="modal fade" id="modal" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            data-bs-backdrop="static" data-bs-keyboard="false">
+
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="model-header">
+                        <button type="button" class="btn-close float-end me-2 mt-2" data-bs-dismiss="modal"></button>
+                      
+                        <div class="modal-body text-center mb-5">
+                            <img src="assets/images/pop up success.svg" class="my-2">
+                            <h4 class="modal-title">Emp ID
+                                - U
+                                123456</h4>
+                                <h5>
+                                    Employee Create Successfully
+                                </h5>
+
+                                <p>"The employee ID and Password have been sent to the
+                                    user's
+                                    email ID"</p>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+        <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content" style="height: 300px; width: 460px;">
+                        <div class="d-flex justify-content-end mt-2 me-2">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class=" d-flex justify-content-center">
+                            <img src="/assets/images/pop up success.svg" alt="popup icon">
+                        </div>
+                        <h5 class="d-flex justify-content-center mt-3">Emp ID - U 123456</h5>
+                        <h5 class="d-flex justify-content-center mt-3">Employee Created Successfully</h5>
+                        <p class="d-flex justify-content-center mt-3 text-center" >"The employee ID and password have been sent to the user's email ID."</p>
+
+
+
+                        <div class="d-flex justify-content-center mt-2 pb-3">
+                        
+                                    <a class="text-decoration-none btn btn-primary"  routerLink="/my-employees" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        ok
+                                    </a>
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

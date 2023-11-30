@@ -44,10 +44,10 @@
 
   .nav-pills .nav-link.active,
   .nav-pills .show>.nav-link {
-    background-color: #1755E7;
-    color: var(--app-white-color) !important;
-    height: 45px;
-    // border-left: 6px solid var(--app-secondary-color);
+    background-color: #ffffff;
+    color: var(--app-secondary-color) !important;
+    // height: 45px;
+    border-right: 4px solid var(--app-secondary-color);
     // border-width: 20px;
 
   }

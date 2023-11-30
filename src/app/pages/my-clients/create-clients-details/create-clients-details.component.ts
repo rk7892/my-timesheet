@@ -5,6 +5,7 @@ import {MatIconModule} from '@angular/material/icon'
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-create-clients-details',
@@ -33,10 +34,11 @@ export class CreateClientsDetailsComponent {
   templateUrl: 'edit-clients-popup.html',
   standalone: true,
   imports: [MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCheckboxModule
   ],
 })
-export class EditClientsPopupDialog { }
+export class EditClientsPopupDialog {}
 
 
 

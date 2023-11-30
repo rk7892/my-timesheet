@@ -4,6 +4,7 @@ import { ClientsDetailsInfoComponent } from './clients-details-info/clients-deta
 import { ClientsDetailsCompletedProjectComponent } from './clients-details-completed-project/clients-details-completed-project.component';
 import { ClientsDetailsCurrentProjectComponent } from './clients-details-current-project/clients-details-current-project.component';
 import { EditClientsComponent } from './edit-clients/edit-clients.component';
+import { CreateClientsDetailsComponent } from './create-clients-details/create-clients-details.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path:'edit-clients',
     component: EditClientsComponent,
+  },
+  {
+    path:'create-clients-details',
+    component: CreateClientsDetailsComponent
   },
   {
     path: ':id',

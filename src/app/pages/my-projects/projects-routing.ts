@@ -5,6 +5,7 @@ import { UpcomingProjectComponent } from './upcoming-project/upcoming-project.co
 import { CompletedProjectComponent } from './completed-project/completed-project.component';
 import { ProjectDetailsTaskComponent } from './project-details-task/project-details-task.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
+import { CreateProjectComponent } from './create-project/create-project.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
   {
     path:'edit-project',
     component: EditProjectComponent
+  },
+  {
+    path:'create-project',
+    component: CreateProjectComponent
   },
   {
         path: '',

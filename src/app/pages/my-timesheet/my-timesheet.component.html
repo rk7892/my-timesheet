@@ -100,10 +100,10 @@
             <tbody>
                 <tr *ngFor="let x of [1, 2, 3];">
                     <td class="col-1 py-3">
-                        <a>SMRT {{x}}</a>
+                        <a class="text-muted">SMRT {{x}}</a>
                     </td>
                     <td class="col-1">
-                        <button type="button" class="btn border dropdown-toggle"
+                        <button type="button" class="btn border dropdown-toggle mt-2"
                             data-bs-toggle="dropdown">Design</button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Developing</a></li>
@@ -128,7 +128,7 @@
                 <tr>
                     <td class="col-2 py-3"><a href="" class="text-decoration-none"></a>
                     <div class="dropdown">
-                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn ps-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                            <a href="">+ Select Project</a> 
                         </button>
                         <ul class="dropdown-menu">

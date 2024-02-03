@@ -56,6 +56,14 @@ const routes: Routes = [
         path: 'settings',
         loadComponent: () => import('./pages/settings/settings.component').then(c => c.SettingsComponent),
       },
+      {
+        path: 'post',
+        loadComponent: () => import('./pages/post/post.component').then(c => c.PostComponent),
+      },
+      {
+        path: 'post1',
+        loadChildren: () => import('./pages/post1/post1-routing'),
+      },
     ]
   }
 

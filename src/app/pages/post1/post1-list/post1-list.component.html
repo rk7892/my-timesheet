@@ -1,0 +1,29 @@
+<!-- <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">userId</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">body</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of postList">
+        <th>{{x.userId}}
+        </th>
+        <td>{{x.id}}</td>
+        <td>{{x.title}}</td>
+        <td>{{x.body}}</td>
+      </tr>
+    </tbody>
+  </table> -->
+
+
+  <div *ngFor="let x of postList" class="divstyle m-5">
+    <div>
+      <a [routerLink]="['./',x.id]">{{x.id}}</a>
+    </div>
+    <span>{{x.userId}}</span>
+    <h3>{{x.title | uppercase}}</h3>
+    <div>{{x.body}}</div>
+  </div>

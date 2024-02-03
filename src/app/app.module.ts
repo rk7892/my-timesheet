@@ -8,7 +8,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
-import { User1Component } from './pages/post1/user1/user1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +15,6 @@ import { User1Component } from './pages/post1/user1/user1.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,

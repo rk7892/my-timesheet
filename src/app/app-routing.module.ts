@@ -4,7 +4,6 @@ import { AppShellComponent } from './components/app-shell.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
-import { SettingsComponent } from './pages/settings/settings.component';
 
 const routes: Routes = [
   {
@@ -55,6 +54,14 @@ const routes: Routes = [
       {
         path: 'settings',
         loadComponent: () => import('./pages/settings/settings.component').then(c => c.SettingsComponent),
+      },
+      {
+        path: 'post',
+        loadComponent: () => import('./pages/post/post.component').then(c => c.PostComponent),
+      },
+      {
+        path: 'post1',
+        loadChildren: () => import('./pages/post1/post1-routing'),
       },
     ]
   }

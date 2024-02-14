@@ -36,10 +36,7 @@ export class MyEmployeeInfoComponent implements OnDestroy{
     { label: 'current project', link: 'my-employee-current-project' },
     { label: 'timesheet', link: 'my-employee-timesheet' },
   ];
-
     lastActiveTab = this.links[0].link;
- 
-
   constructor() {
     this.subscriptions.add(
       this.router.events.pipe(filter(x => x instanceof NavigationEnd)).subscribe(() => {
@@ -58,4 +55,5 @@ export class MyEmployeeInfoComponent implements OnDestroy{
     this.subscriptions.unsubscribe();
   }
 }
+
 
